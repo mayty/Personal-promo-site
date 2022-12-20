@@ -1,0 +1,24 @@
+<svg
+    xmlns="http://www.w3.org/2000/svg" viewBox="-2 -2 17 20"  preserveAspectRatio="none"
+>
+<path d="M 0 2 h 1 v -1 h 1 v -1 h 1 v 1 h 1 v -1 h 1 v 1 h 1 v -1 h 1 v 1 h 1 v -1 h 1 v 1 h 1 v -1 h 1 v 1 h 1 v 1 h 1 v 13 h -1 v 1 h -11 v -1 h -1" style="fill:#000000;"/>
+<path d="M 0 2 h 2 v -1 h 9 v 1 h 1 v 13 h -12" style="fill:#FFFFFF;"/>
+<path d="M 1 14 h 10 v -11 h 1 v 12 h -11" style="fill:#C0C0C0;"/>
+<path d="M 0 2 h 1 v 13 h -1" style="fill:#808080;"/>
+<rect x="2" y="2" height="1" width="1" style="fill:#000000;"/>
+<rect x="4" y="2" height="1" width="1" style="fill:#000000;"/>
+<rect x="6" y="2" height="1" width="1" style="fill:#000000;"/>
+<rect x="8" y="2" height="1" width="1" style="fill:#000000;"/>
+<rect x="10" y="2" height="1" width="1" style="fill:#000000;"/>
+
+<rect x="3" y="5" height="1" width="3" style="fill:#000000;"/>
+<rect x="7" y="5" height="1" width="2" style="fill:#000000;"/>
+<rect x="3" y="7" height="1" width="6" style="fill:#000000;"/>
+<rect x="3" y="9" height="1" width="6" style="fill:#000000;"/>
+<rect x="3" y="11" height="1" width="6" style="fill:#000000;"/>
+
+<rect x="3" y="1" height="1" width="1" style="fill:#808080;"/>
+<rect x="5" y="1" height="1" width="1" style="fill:#808080;"/>
+<rect x="7" y="1" height="1" width="1" style="fill:#808080;"/>
+<rect x="9" y="1" height="1" width="1" style="fill:#808080;"/>
+</svg>
