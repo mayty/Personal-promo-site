@@ -27,6 +27,10 @@ table {
   border-image-slice: 2 fill;
 }
 
+.window-icon {
+  height: var(--header-height);
+}
+
 body {
   --cross-height: 5px;
   --cross-width: 5px;
@@ -47,8 +51,8 @@ body {
   height: var(--height);
 }
 
-.centered-div {
-  width: auto;
+.introduction-centered {
+  width: 12em;
   margin: auto;
 }
 
@@ -58,7 +62,7 @@ body {
   flex-direction: row;
   background-color: #0000A8;
   color: #FFFFFF;
-  padding-left: 0.2em;
+  gap: var(--border-width)
 }
 
 .outer-cross {
