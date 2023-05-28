@@ -22,6 +22,7 @@
 .doc-app-container {
     display: flex;
     flex-direction: row;
+    width: 100%;
     gap: var(--border-width);
     border-width: var(--border-width);
     border-style: solid;
@@ -49,7 +50,7 @@
     display: flex;
     flex-direction: row;
     border-width: var(--border-width);
-    width: var(--app-width);
+    width: min(100%, var(--app-width));
     height: var(--window-height);
     border-style: solid;
     image-rendering: pixelated;
