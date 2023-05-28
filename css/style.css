@@ -1,0 +1,33 @@
+@font-face {
+    font-family: "W95FA";
+    src: url("./../assets/W95FA/W95FA.otf");
+    src: 
+        url("./../assets/W95FA/w95fa.woff2") format("woff2"),
+        url("./../assets/W95FA/w95fa.woff") format("woff");
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    --font-size: 1em;
+    outline: red dashed 1px;
+}
+
+body {
+    --cross-height: 5px;
+    --cross-width: 5px;
+    --border-width: 2px;
+    --max-width: 1000px;
+    --target-padding: 10px;
+    --header-height: 1.2em;
+    background-color: #57A8A8;
+    font-family: 'W95FA';
+}
+
+.default {
+    padding: var(--target-padding);
+    max-width: var(--max-width);
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+}

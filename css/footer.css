@@ -1,0 +1,68 @@
+.footer {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+.doc-bar {
+    --window-height: 1.2em;
+    --start-width: 1.334em;
+    --app-width: 150px;
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    background-color: #0000A8;
+    border-top-width: var(--border-width);
+    border-top-style: solid;
+    image-rendering: pixelated;
+    border-image-source: url(./../assets/borders/border-dockbar.png);
+    border-image-slice: 2 fill;
+}
+
+.doc-app-container {
+    display: flex;
+    flex-direction: row;
+    gap: var(--border-width);
+    border-width: var(--border-width);
+    border-style: solid;
+    border-color: transparent;
+}
+
+.start-app {
+    gap: var(--border-width);
+    margin-right: calc(2 * var(--border-width));
+    align-items: center;
+    display: flex;
+    flex-direction: row;
+    border-width: var(--border-width);
+    width: auto;
+    height: var(--window-height);
+    border-style: solid;
+    image-rendering: pixelated;
+    border-image-source: url(./../assets/borders/border-dock.png);
+    border-image-slice: 2 fill;
+}
+
+.doc-app {
+    gap: var(--border-width);
+    align-items: center;
+    display: flex;
+    flex-direction: row;
+    border-width: var(--border-width);
+    width: var(--app-width);
+    height: var(--window-height);
+    border-style: solid;
+    image-rendering: pixelated;
+    border-image-source: url(./../assets/borders/border-dock.png);
+    border-image-slice: 2 fill;
+}
+
+.windows-icon {
+    height: var(--window-height);
+    width: var(--start-width);
+}
+
+.app-icon {
+    height: var(--window-height);
+    width: var(--window-height);
+}

@@ -1,77 +1,78 @@
 <!DOCTYPE html>
 
-<html>  
+<html lang="en">  
    <head>
       <meta charset = "utf-8">
       <title>Pavel Pikirenia</title>
-      <link rel="stylesheet" href="./style.css">
+      <link rel="stylesheet" href="./css/style.css">
+      <link rel="stylesheet" href="./css/windows.css">
+      <link rel="stylesheet" href="./css/header.css">
+      <link rel="stylesheet" href="./css/footer.css">
+      <link rel="stylesheet" href="./css/main.css">
    </head>
-  
-   <body>
+
+  <body>
     <div class="default">
-      <table>
-        <colgroup>
-          <col span="1" style="width: 188px;">
-        </colgroup>
-        <tr class="header-row">
-          <td>
-            <table class="window">
-              <tr>
-                <td>
-                  <div class="window-header">
-                    <div class="window-header">
-                      <image src="./assets/icons/image.svg" class="window-icon"></image>
-                      <div class="window-name">Photo.jpg</div>
-                    </div>
-                    <div class="outer-cross">
-                      <div class="inner-cross">
-                        <div class="cross-base">
-                          <image src="./assets/icons/cross.svg" class="cross"></image>
-                        </div>
-                      </div>
+      <div class="header-container">
+        <!-- Photo -->
+        <table class="min-window">
+          <tr>
+            <td>
+              <div class="window-header">
+                <div class="window-header">
+                  <image src="./assets/icons/image.svg" class="window-icon"></image>
+                  <div class="window-name">Photo.jpg</div>
+                </div>
+                <div class="outer-cross">
+                  <div class="inner-cross">
+                    <div class="cross-base">
+                      <image src="./assets/icons/cross.svg" class="cross"></image>
                     </div>
                   </div>
-                </td>
-              </tr>
-              <tr>
-                <td class="cell-image"></td>
-              </tr>
-            </table>
-          </td>
-          <td>
-            <table class="window">
-              <tr>
-                <td>
-                  <div class="window-header">
-                    <div class="window-header">
-                      <image src="./assets/icons/text.svg" class="window-icon"></image>
-                      <div class="window-name">Introduction</div>
-                    </div>
-                    <div class="outer-cross">
-                      <div class="inner-cross">
-                        <div class="cross-base">
-                          <image src="./assets/icons/cross.svg" class="cross"></image>
-                        </div>
-                      </div>
+                </div>
+              </div>
+            </td>
+          </tr>
+          <tr>
+            <td class="cell-image"></td>
+          </tr>
+        </table>
+        <!-- Name -->
+        <table class="window">
+          <tr>
+            <td>
+              <div class="window-header">
+                <div class="window-header">
+                  <image src="./assets/icons/text.svg" class="window-icon"></image>
+                  <div class="window-name">Introduction</div>
+                </div>
+                <div class="outer-cross">
+                  <div class="inner-cross">
+                    <div class="cross-base">
+                      <image src="./assets/icons/cross.svg" class="cross"></image>
                     </div>
                   </div>
-                </td>
-              </tr>
-              <tr>
-                <td class="introduction-body">
-                  <div class="introduction-centered">
-                    <h1>Pavel Pikirenia</h1>
-                    <p>Backend Web Developer</p>
-                  </div>
-                </td>
-              </tr>
-            </table>
-          </td>
-        </tr>
-      </table>
+                </div>
+              </div>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <div class="text-window text-window-height">
+                <div class="introduction-centered">
+                  <h1>Pavel&nbsp;Pikirenia</h1>
+                  <p>Backend&nbsp;Web&nbsp;Developer</p>
+                </div>
+              </div>
+            </td>
+          </tr>
+        </table>
+      </div>
       <div class="main-container">
+        <!-- Contacts -->
         <div class="side-data">
-          <table class="window">
+          <!-- Contacts -->
+          <table class="min-window">
             <tr>
               <td>
                 <div class="window-header">
@@ -91,46 +92,84 @@
             </tr>
             <tr>
               <td>
-                <div class="contacts-list">
-                  <div class="list-item">
-                    <image src="./assets/icons/gmail-pixel.svg" class="contacts-bullet"></image>
-                    <a>Email:</a>
-                    <a href = "mailto:pik.paval@gmail.com">pik.paval@gmail.com</a>
-                  </div>
-                  <div class="list-item">
-                    <image src="./assets/icons/telegram-pixel.svg" class="contacts-bullet"></image>
-                    <a>Telegram:</a>
-                    <a href = "https://t.me/the_mAyty">the_mAyty</a>
-                  </div>
-                  <div class="list-item">
-                    <image src="./assets/icons/facebook-pixel.svg" class="contacts-bullet"></image>
-                    <a>Facebook:</a>
-                    <a href = "https://www.facebook.com/pik.paval">pik.paval</a>
-                  </div>
-                  <div class="list-item">
-                    <image src="./assets/icons/linkedin.svg" class="contacts-bullet"></image>
-                    <a>LinkedIn:</a>
-                    <a href = "https://www.linkedin.com/in/pavel-pikirenia/">Pavel Pikirenia</a>
-                  </div>
-                  <div class="list-item">
-                    <image src="./assets/icons/globe.svg" class="contacts-bullet"></image>
-                    <a>Vilnius, Lithuania</a>
+                <div class="text-window">
+                  <div class="contacts-list">
+                    <div class="list-item">
+                      <image src="./assets/icons/gmail-pixel.svg" class="contacts-bullet"></image>
+                      &nbsp;
+                      <a>Email:</a>
+                      &nbsp;
+                      <a href = "mailto:pik.paval@gmail.com">pik.paval@gmail.com</a>
+                    </div>
+                    <div class="list-item">
+                      <image src="./assets/icons/telegram-pixel.svg" class="contacts-bullet"></image>
+                      &nbsp;
+                      <a>Telegram:</a>
+                      &nbsp;
+                      <a href = "https://t.me/the_mAyty">the_mAyty</a>
+                    </div>
+                    <div class="list-item">
+                      <image src="./assets/icons/facebook-pixel.svg" class="contacts-bullet"></image>
+                      &nbsp;
+                      <a>Facebook:</a>
+                      &nbsp;
+                      <a href = "https://www.facebook.com/pik.paval">pik.paval</a>
+                    </div>
+                    <div class="list-item">
+                      <image src="./assets/icons/linkedin.svg" class="contacts-bullet"></image>
+                      &nbsp;
+                      <a>LinkedIn:</a>
+                      &nbsp;
+                      <a href = "https://www.linkedin.com/in/pavel-pikirenia/">Pavel&nbsp;Pikirenia</a>
+                    </div>
+                    <div class="list-item">
+                      <image src="./assets/icons/globe.svg" class="contacts-bullet"></image>
+                      &nbsp;
+                      <a>Vilnius,&nbsp;Lithuania</a>
+                    </div>
                   </div>
                 </div>
               </td>
             </tr>
           </table>
         </div>
-        <div class="main-data">
-  
-        </div>
+        <!-- Experience -->
+        <table class="minh-window">  
+          <tr>
+            <td>
+              <div class="window-header">
+                <div class="window-header">
+                  <image src="./assets/icons/text.svg" class="window-icon"></image>
+                  <div class="window-name">Experience</div>
+                </div>
+                <div class="outer-cross">
+                  <div class="inner-cross">
+                    <div class="cross-base">
+                      <image src="./assets/icons/cross.svg" class="cross"></image>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <div class="text-window">
+                <div class="experience">
+                  <a>> Wargaming</a>
+                  <a> > 2021 - now</a>
+                </div>
+              </div>
+            </td>
+          </tr>
+        </table>
       </div>
     </div>
     <div class="footer">
       <div class="doc-bar">
         <div class="doc-app-container">
           <div class="start-app">
-            <image src="./assets/icons/start.svg" class="app-icon"></image>
+            <image src="./assets/icons/start.svg" class="windows-icon"></image>
             <a class="window-name">Start</a>
           </div>
           <div class="doc-app">
@@ -145,8 +184,11 @@
             <image src="./assets/icons/text.svg" class="app-icon"></image>
             <a class="window-name">Contacts</a>
           </div>
-        </div>
+          <div class="doc-app">
+            <image src="./assets/icons/text.svg" class="app-icon"></image>
+            <a class="window-name">Experience</a>
+          </div>
       </div>
     </div>
-   </body>
+  </body>
 </html>
