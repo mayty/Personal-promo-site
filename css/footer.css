@@ -2,11 +2,11 @@
     position: fixed;
     bottom: 0;
     width: 100%;
+    z-index: 2;
 }
 
 .doc-bar {
     --window-height: 1.2em;
-    --start-width: 1.334em;
     --app-width: 150px;
     display: flex;
     flex-direction: row;
@@ -17,6 +17,7 @@
     image-rendering: pixelated;
     border-image-source: url(./../assets/borders/border-dockbar.png);
     border-image-slice: 2 fill;
+    z-index: 2;
 }
 
 .doc-app-container {
@@ -27,6 +28,7 @@
     border-width: var(--border-width);
     border-style: solid;
     border-color: transparent;
+    z-index: 2;
 }
 
 .start-app {
@@ -42,6 +44,7 @@
     image-rendering: pixelated;
     border-image-source: url(./../assets/borders/border-dock.png);
     border-image-slice: 2 fill;
+    z-index: 2;
 }
 
 .doc-app {
@@ -56,14 +59,31 @@
     image-rendering: pixelated;
     border-image-source: url(./../assets/borders/border-dock.png);
     border-image-slice: 2 fill;
+    z-index: 2;
 }
 
 .windows-icon {
-    height: var(--window-height);
-    width: var(--start-width);
+    --icon-size: calc(var(--header-height) - (var(--border-width) * 2));
+    --windows-width: calc(var(--icon-size) * 16 / 14);
+    height: var(--icon-size);
+    width: var(--windows-width);
+    z-index: 2;
+    border-width: var(--border-width);
+    border-style: solid;
+    border-color: transparent;
 }
 
 .app-icon {
-    height: var(--window-height);
-    width: var(--window-height);
+    --icon-size: calc(var(--header-height) - (var(--border-width) * 2));
+    height: var(--icon-size);
+    width: var(--icon-size);
+    z-index: 2;
+    border-width: var(--border-width);
+    border-style: solid;
+    border-color: transparent;
+}
+
+.doc-name {
+    margin-top: calc(var(--header-height) * 0.2);
+    margin-right: var(--border-width);
 }

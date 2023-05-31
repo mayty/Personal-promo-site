@@ -13,7 +13,7 @@
     image-rendering: pixelated;
     border-image-source: url(./../assets/borders/border-text.png);
     border-image-slice: 2 fill;
-    margin: 2px;
+    margin: 0px;
 }
 
 .min-window {
@@ -37,11 +37,17 @@
 }
 
 .window-icon {
-    height: var(--header-height);
-    width: var(--header-height);
+    --icon-size: calc(var(--header-height) - (var(--border-width) * 2));
+    height: var(--icon-size);
+    width: var(--icon-size);
+    border-width: var(--border-width);
+    border-style: solid;
+    border-color: transparent;
 }
 
 .window-header {
+    --cross-height: calc(var(--header-height) - (var(--border-width) * 5));
+    --cross-width: calc(var(--cross-height) * 8 / 7);
     justify-content: space-between;
     display: flex;
     flex-direction: row;
@@ -58,13 +64,13 @@
 
 .cross {
     position:absolute;
-    width: 8px;
-    height: 7px;
+    width: var(--cross-width);
+    height: var(--cross-height);
 }
 
 .cross-base {
-    width: 8px;
-    height: 7px;
+    width: var(--cross-width);
+    height: var(--cross-height);
     border-width: var(--border-width);
     border-top-width: calc(var(--border-width) / 2);
     border-style: solid;
@@ -79,7 +85,5 @@
 }
 
 .window-name {
-    margin: auto;
-    margin-left: 0;
-    margin-right: var(--border-width);
+    margin-top: calc(var(--header-height) * 0.2);
 }

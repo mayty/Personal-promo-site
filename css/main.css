@@ -62,6 +62,12 @@
     margin-left: calc(var(--inline-picture-size) * 2);
 }
 
+.list-item3 {
+    display: flex;
+    width: max-content;
+    margin-left: calc(var(--inline-picture-size) * 3.5);
+}
+
 .list-item-nested {
     display: flex;
     width: max-content;
