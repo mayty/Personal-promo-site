@@ -24,10 +24,11 @@ body {
     font-family: 'W95FA';
 }
 
-.default {
+.desktop {
     padding: var(--target-padding);
     max-width: var(--max-width);
     margin: auto;
+    margin-bottom: calc(var(--header-height) + var(--target-padding));
     display: flex;
     flex-direction: column;
 }
