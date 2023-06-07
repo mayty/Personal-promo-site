@@ -1,4 +1,4 @@
-table[class$="window"] {
+table[class^="window"] {
     border-width: var(--border-width);
     border-style: solid;
     image-rendering: pixelated;
@@ -6,11 +6,11 @@ table[class$="window"] {
     border-image-slice: 2 fill;
 }
 
-.window {
+table[class~=window] {
     width: 100%;
 }
 
-.text-window {
+.window-text {
     border-width: var(--border-width);
     border-style: solid;
     image-rendering: pixelated;
@@ -18,17 +18,17 @@ table[class$="window"] {
     border-image-slice: 2 fill;
 }
 
-.min-window {
+.window-min {
     width: min-content;
     height: min-content;
 }
 
-.minh-window {
+.window-minh {
     width: 100%;
     height: min-content;
 }
 
-.window-icon {
+.icon-window {
     --icon-size: calc(var(--header-height) - (var(--border-width) * 2));
     height: var(--icon-size);
     width: var(--icon-size);
@@ -38,7 +38,7 @@ table[class$="window"] {
     user-select: none;
 }
 
-.window-header {
+.header-window {
     --cross-height: calc(var(--header-height) - (var(--border-width) * 5));
     --cross-width: calc(var(--cross-height) * 8 / 7);
     justify-content: space-between;
@@ -53,6 +53,7 @@ table[class$="window"] {
     border-width: var(--border-width);
     border-style: solid;
     border-color: transparent;
+    cursor: pointer;
 }
 
 .cross {

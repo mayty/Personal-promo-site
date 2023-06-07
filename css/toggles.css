@@ -1,0 +1,124 @@
+
+input {
+    display: none;
+}
+
+#english:checked ~ div[class~=collapsible-english] {
+    display: none;
+}
+
+#english:checked ~ div[class|=list-item] > img[class~=collapsible-english] {
+    display: none;
+}
+
+#english:checked ~ * .list-bullet-collapsible-english {
+    content: url("../assets/icons/plus.svg");
+}
+
+#belarusian:checked ~ div[class~=collapsible-belarusian] {
+    display: none;
+}
+
+#belarusian:checked ~ div[class|=list-item] > img[class~=collapsible-belarusian] {
+    display: none;
+}
+
+#belarusian:checked ~ * .list-bullet-collapsible-belarusian {
+    content: url("../assets/icons/plus.svg");
+}
+
+#russian:checked ~ div[class~=collapsible-russian] {
+    display: none;
+}
+
+#russian:checked ~ div[class|=list-item] > img[class~=collapsible-russian] {
+    display: none;
+}
+
+#russian:checked ~ * .list-bullet-collapsible-russian {
+    content: url("../assets/icons/plus.svg");
+}
+
+#wargaming:checked ~ div[class~=collapsible-wargaming] {
+    display: none;
+}
+
+#wargaming:checked ~ * .list-bullet-collapsible-wargaming {
+    content: url("../assets/icons/plus.svg");
+}
+
+#wargaming-technologies:checked ~ div[class~=collapsible-wargaming-technologies] {
+    display: none;
+}
+
+#wargaming-technologies:checked ~ * .list-bullet-collapsible-wargaming-technologies {
+    content: url("../assets/icons/plus.svg");
+}
+
+#bsuir:checked ~ div[class~=collapsible-bsuir] {
+    display: none;
+}
+
+#bsuir:checked ~ div[class|=list-item] > img[class~=collapsible-bsuir] {
+    display: none;
+}
+
+#bsuir:checked ~ * .list-bullet-collapsible-bsuir {
+    content: url("../assets/icons/plus.svg");
+}
+
+#cisco:checked ~ div[class~=collapsible-cisco] {
+    display: none;
+}
+
+#cisco:checked ~ * .list-bullet-collapsible-cisco {
+    content: url("../assets/icons/plus.svg");
+}
+
+#hard-skills:checked ~ div[class~=collapsible-hard-skills] {
+    display: none;
+}
+
+#hard-skills:checked ~ div[class|=list-item] > img[class~=collapsible-hard-skills] {
+    display: none;
+}
+
+#hard-skills:checked ~ * .list-bullet-collapsible-hard-skills {
+    content: url("../assets/icons/plus.svg");
+}
+
+#soft-skills:checked ~ div[class~=collapsible-soft-skills] {
+    display: none;
+}
+
+#soft-skills:checked ~ * .list-bullet-collapsible-soft-skills {
+    content: url("../assets/icons/plus.svg");
+}
+
+#photo:checked ~ div[class~=desktop] > div[class~=header-container] > table[class~=closable-photo] {
+    visibility: hidden;
+}
+
+#introduction:checked ~ div[class~=desktop] > div[class~=header-container] > table[class~=closable-introduction] {
+    visibility: hidden;
+}
+
+#contacts:checked ~ div[class~=desktop] > div[class~=main-container] > div[class~=side-data] > table[class~=closable-contacts] {
+    visibility: hidden;
+}
+
+#skills:checked ~ div[class~=desktop] > div[class~=main-container] > div[class~=side-data] > table[class~=closable-skills] {
+    visibility: hidden;
+}
+
+#languages:checked ~ div[class~=desktop] > div[class~=main-container] > div[class~=side-data] > table[class~=closable-languages] {
+    visibility: hidden;
+}
+
+#experience:checked ~ div[class~=desktop] > div[class~=main-container] > div[class~=big-part-container] > table[class~=closable-experience] {
+    visibility: hidden;
+}
+
+#education:checked ~ div[class~=desktop] > div[class~=main-container] > div[class~=big-part-container] > table[class~=closable-education] {
+    visibility: hidden;
+}

@@ -47,19 +47,29 @@
     z-index: 2;
 }
 
+div[class=doc-app-container] > label {
+    width: var(--app-width);
+    display: inline-flex;
+}
+
+label[for=languages] {
+    margin-right: calc(2 * var(--border-width));
+}
+
 .doc-app {
     gap: var(--border-width);
     align-items: center;
     display: flex;
     flex-direction: row;
     border-width: var(--border-width);
-    width: min(100%, var(--app-width));
+    width: 100%;
     height: var(--window-height);
     border-style: solid;
     image-rendering: pixelated;
     border-image-source: url(./../assets/borders/border-dock.png);
     border-image-slice: 2 fill;
     z-index: 2;
+    cursor: pointer;
 }
 
 .windows-icon {

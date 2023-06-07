@@ -9,28 +9,38 @@
       <link rel="stylesheet" href="./css/header.css">
       <link rel="stylesheet" href="./css/footer.css">
       <link rel="stylesheet" href="./css/main.css">
+      <link rel="stylesheet" href="./css/toggles.css">
       <link rel="icon" href="./assets/icons/favicon.svg" type="image/svg+xml" sizes="any">
    </head>
 
   <body>
+    <input type="checkbox" id="photo"/>
+    <input type="checkbox" id="introduction"/>
+    <input type="checkbox" id="contacts"/>
+    <input type="checkbox" id="skills"/>
+    <input type="checkbox" id="languages"/>
+    <input type="checkbox" id="experience"/>
+    <input type="checkbox" id="education"/>
     <div class="desktop">
       <div class="header-container">
         <!-- Photo -->
-        <table class="min-window">
+        <table class="window-min closable-photo">
           <tr>
             <td>
-              <div class="window-header">
-                <div class="window-header">
-                  <image src="./assets/icons/image.svg" class="window-icon"></image>
+              <div class="header-window">
+                <div class="header-window">
+                  <image src="./assets/icons/image.svg" class="icon-window"></image>
                   <div class="window-name">Photo.jpg</div>
                 </div>
-                <div class="outer-cross">
-                  <div class="inner-cross">
-                    <div class="cross-base">
-                      <image class="cross"></image>
+                <label for="photo">
+                  <div class="outer-cross">
+                    <div class="inner-cross">
+                      <div class="cross-base">
+                        <image class="cross"></image>
+                      </div>
                     </div>
                   </div>
-                </div>
+                </label>
               </div>
             </td>
           </tr>
@@ -38,28 +48,30 @@
             <td class="cell-image"></td>
           </tr>
         </table>
-        <!-- Name -->
-        <table class="window">
+        <!-- Introducation -->
+        <table class="window closable-introduction">
           <tr>
             <td>
-              <div class="window-header">
-                <div class="window-header">
-                  <image src="./assets/icons/text.svg" class="window-icon"></image>
+              <div class="header-window">
+                <div class="header-window">
+                  <image src="./assets/icons/text.svg" class="icon-window"></image>
                   <div class="window-name">Introduction</div>
                 </div>
-                <div class="outer-cross">
-                  <div class="inner-cross">
-                    <div class="cross-base">
-                      <image class="cross"></image>
+                <label for="introduction">
+                  <div class="outer-cross">
+                    <div class="inner-cross">
+                      <div class="cross-base">
+                        <image class="cross"></image>
+                      </div>
                     </div>
                   </div>
-                </div>
+                </label>
               </div>
             </td>
           </tr>
           <tr>
             <td>
-              <div class="text-window text-window-height">
+              <div class="window-text text-window-height">
                 <div class="introduction-centered">
                   <h1>Pavel&nbsp;Pikirenia</h1>
                   <p>Backend&nbsp;Web&nbsp;Developer</p>
@@ -73,27 +85,29 @@
         <!-- Left Side -->
         <div class="side-data">
           <!-- Contacts -->
-          <table class="minh-window">
+          <table class="window-minh closable-contacts">
             <tr>
               <td>
-                <div class="window-header">
-                  <div class="window-header">
-                    <image src="./assets/icons/text.svg" class="window-icon"></image>
+                <div class="header-window">
+                  <div class="header-window">
+                    <image src="./assets/icons/text.svg" class="icon-window"></image>
                     <div class="window-name">Contacts</div>
                   </div>
-                  <div class="outer-cross">
-                    <div class="inner-cross">
-                      <div class="cross-base">
-                        <image class="cross"></image>
+                  <label for="contacts">
+                    <div class="outer-cross">
+                      <div class="inner-cross">
+                        <div class="cross-base">
+                          <image class="cross"></image>
+                        </div>
                       </div>
                     </div>
-                  </div>
+                  </label>
                 </div>
               </td>
             </tr>
             <tr>
               <td>
-                <div class="text-window">
+                <div class="window-text">
                   <div class="list">
                     <div class="list-item">
                       <image src="./assets/icons/gmail-pixel.svg" class="list-bullet"></image>
@@ -125,35 +139,41 @@
             </tr>
           </table>
           <!-- Skills -->
-          <table class="minh-window">
+          <table class="window-minh closable-skills">
             <tr>
               <td>
-                <div class="window-header">
-                  <div class="window-header">
-                    <image src="./assets/icons/text.svg" class="window-icon"></image>
+                <div class="header-window">
+                  <div class="header-window">
+                    <image src="./assets/icons/text.svg" class="icon-window"></image>
                     <div class="window-name">Skills</div>
                   </div>
-                  <div class="outer-cross">
-                    <div class="inner-cross">
-                      <div class="cross-base">
-                        <image class="cross"></image>
+                  <label for="skills">
+                    <div class="outer-cross">
+                      <div class="inner-cross">
+                        <div class="cross-base">
+                          <image class="cross"></image>
+                        </div>
                       </div>
                     </div>
-                  </div>
+                  </label>
                 </div>
               </td>
             </tr>
             <tr>
               <td>
-                <div class="text-window">
+                <div class="window-text">
                   <div class="list">
+                    <input type="checkbox" id="hard-skills"/>
+                    <input type="checkbox" id="soft-skills"/>
                     <div class="list-item">
-                      <image class="list-bullet-collapsible"></image>
+                      <label for="hard-skills">
+                        <image class="list-bullet-collapsible-hard-skills"></image>
+                      </label>
                       <image class="inline-dash"></image>
                       <image src="./assets/icons/wargaming.svg" class="list-bullet"></image>
                       &nbsp;Hard Skills
                     </div>
-                    <div class="list-item2">
+                    <div class="list-item2 collapsible-hard-skills">
                       <image class="vertical-dash"></image>
                       <div class="list-item-nested">
                         <image class="inline-dash"></image>
@@ -161,7 +181,7 @@
                         &nbsp;Python3
                       </div>
                     </div>
-                    <div class="list-item2">
+                    <div class="list-item2 collapsible-hard-skills">
                       <image class="vertical-dash"></image>
                       <div class="list-item-nested">
                         <image class="inline-dash"></image>
@@ -169,7 +189,7 @@
                         &nbsp;SQL (PostgreSQL)
                       </div>
                     </div>
-                    <div class="list-item2">
+                    <div class="list-item2 collapsible-hard-skills">
                       <image class="vertical-dash"></image>
                       <div class="list-item-nested">
                         <image class="inline-dash"></image>
@@ -177,7 +197,7 @@
                         &nbsp;Redis
                       </div>
                     </div>
-                    <div class="list-item2">
+                    <div class="list-item2 collapsible-hard-skills">
                       <image class="vertical-dash"></image>
                       <div class="list-item-nested">
                         <image class="inline-dash"></image>
@@ -185,7 +205,7 @@
                         &nbsp;Kafka
                       </div>
                     </div>
-                    <div class="list-item2">
+                    <div class="list-item2 collapsible-hard-skills">
                       <image class="vertical-dash"></image>
                       <div class="list-item-nested">
                         <image class="inline-dash"></image>
@@ -193,7 +213,7 @@
                         &nbsp;RabbitMQ
                       </div>
                     </div>
-                    <div class="list-item2">
+                    <div class="list-item2 collapsible-hard-skills">
                       <image class="vertical-dash"></image>
                       <div class="list-item-nested">
                         <image class="inline-dash"></image>
@@ -201,7 +221,7 @@
                         &nbsp;Celery
                       </div>
                     </div>
-                    <div class="list-item2">
+                    <div class="list-item2 collapsible-hard-skills">
                       <image class="vertical-dash"></image>
                       <div class="list-item-nested">
                         <image class="inline-dash"></image>
@@ -209,7 +229,7 @@
                         &nbsp;Git
                       </div>
                     </div>
-                    <div class="list-item2">
+                    <div class="list-item2 collapsible-hard-skills">
                       <image class="vertical-dash"></image>
                       <div class="list-item-nested">
                         <image class="inline-dash"></image>
@@ -219,22 +239,24 @@
                     </div>
                     <div class="list-item">
                       <image class="vertical-dash"></image>
-                      <image class="vertical-dash-2"></image>
-                      <image class="vertical-dash-3"></image>
-                      <image class="vertical-dash-4"></image>
-                      <image class="vertical-dash-5"></image>
-                      <image class="vertical-dash-6"></image>
-                      <image class="vertical-dash-7"></image>
-                      <image class="vertical-dash-8"></image>
-                      <image class="vertical-dash-9"></image>
+                      <image class="vertical-dash-2 collapsible-hard-skills"></image>
+                      <image class="vertical-dash-3 collapsible-hard-skills"></image>
+                      <image class="vertical-dash-4 collapsible-hard-skills"></image>
+                      <image class="vertical-dash-5 collapsible-hard-skills"></image>
+                      <image class="vertical-dash-6 collapsible-hard-skills"></image>
+                      <image class="vertical-dash-7 collapsible-hard-skills"></image>
+                      <image class="vertical-dash-8 collapsible-hard-skills"></image>
+                      <image class="vertical-dash-9 collapsible-hard-skills"></image>
                       <div class="list-item-root">
-                        <image class="list-bullet-collapsible"></image>
+                        <label for="soft-skills">
+                          <image class="list-bullet-collapsible-soft-skills"></image>
+                        </label>
                         <image class="inline-dash"></image>
                         <image src="./assets/icons/wargaming.svg" class="list-bullet"></image>
                         &nbsp;Soft Skills
                       </div>
                     </div>
-                    <div class="list-item2">
+                    <div class="list-item2 collapsible-soft-skills">
                       <image class="vertical-dash"></image>
                       <div class="list-item-nested">
                         <image class="inline-dash"></image>
@@ -248,27 +270,29 @@
             </tr>
           </table>
           <!-- Languages -->
-          <table class="minh-window">
+          <table class="window-minh closable-languages">
             <tr>
               <td>
-                <div class="window-header">
-                  <div class="window-header">
-                    <image src="./assets/icons/text.svg" class="window-icon"></image>
+                <div class="header-window">
+                  <div class="header-window">
+                    <image src="./assets/icons/text.svg" class="icon-window"></image>
                     <div class="window-name">Languages</div>
                   </div>
-                  <div class="outer-cross">
-                    <div class="inner-cross">
-                      <div class="cross-base">
-                        <image class="cross"></image>
+                  <label for="languages">
+                    <div class="outer-cross">
+                      <div class="inner-cross">
+                        <div class="cross-base">
+                          <image class="cross"></image>
+                        </div>
                       </div>
                     </div>
-                  </div>
+                  </label>
                 </div>
               </td>
             </tr>
             <tr>
               <td>
-                <div class="text-window">
+                <div class="window-text">
                   <div class="list">
                     <input type="checkbox" id="english"/>
                     <input type="checkbox" id="belarusian"/>
@@ -281,14 +305,12 @@
                       <image src="./assets/icons/globe.svg" class="list-bullet"></image>
                       &nbsp;English
                     </div>
-                    <div class="collapsible-english">
-                      <div class="list-item2">
-                        <image class="vertical-dash"></image>
-                        <div class="list-item-nested">
-                          <image class="inline-dash"></image>
-                          <image src="./assets/icons/chip.svg" class="list-bullet"></image>
-                          &nbsp;C1
-                        </div>
+                    <div class="list-item2 collapsible-english">
+                      <image class="vertical-dash"></image>
+                      <div class="list-item-nested">
+                        <image class="inline-dash"></image>
+                        <image src="./assets/icons/chip.svg" class="list-bullet"></image>
+                        &nbsp;C1
                       </div>
                     </div>
                     <div class="list-item">
@@ -303,14 +325,12 @@
                         &nbsp;Belarusian
                       </div>
                     </div>
-                    <div class="collapsible-belarusian">
-                      <div class="list-item2">
-                        <image class="vertical-dash"></image>
-                        <div class="list-item-nested">
-                          <image class="inline-dash"></image>
-                          <image src="./assets/icons/chip.svg" class="list-bullet"></image>
-                          &nbsp;Native
-                        </div>
+                    <div class="list-item2 collapsible-belarusian">
+                      <image class="vertical-dash"></image>
+                      <div class="list-item-nested">
+                        <image class="inline-dash"></image>
+                        <image src="./assets/icons/chip.svg" class="list-bullet"></image>
+                        &nbsp;Native
                       </div>
                     </div>
                     <div class="list-item">
@@ -325,14 +345,12 @@
                         &nbsp;Russian
                       </div>
                     </div>
-                    <div class="collapsible-russian">
-                      <div class="list-item2">
-                        <image class="vertical-dash"></image>
-                        <div class="list-item-nested">
-                          <image class="inline-dash"></image>
-                          <image src="./assets/icons/chip.svg" class="list-bullet"></image>
-                          &nbsp;Native
-                        </div>
+                    <div class="list-item2 collapsible-russian">
+                      <image class="vertical-dash"></image>
+                      <div class="list-item-nested">
+                        <image class="inline-dash"></image>
+                        <image src="./assets/icons/chip.svg" class="list-bullet"></image>
+                        &nbsp;Native
                       </div>
                     </div>
                   </div>
@@ -342,202 +360,217 @@
           </table>
         </div>
         <div class="big-part-container">
-          
-        <!-- Experience -->
-        <table class="minh-window">  
-          <tr>
-            <td>
-              <div class="window-header">
-                <div class="window-header">
-                  <image src="./assets/icons/text.svg" class="window-icon"></image>
-                  <div class="window-name">Experience</div>
+          <!-- Experience -->
+          <table class="window-minh closable-experience">  
+            <tr>
+              <td>
+                <div class="header-window">
+                  <div class="header-window">
+                    <image src="./assets/icons/text.svg" class="icon-window"></image>
+                    <div class="window-name">Experience</div>
+                  </div>
+                  <label for="experience">
+                    <div class="outer-cross">
+                      <div class="inner-cross">
+                        <div class="cross-base">
+                          <image class="cross"></image>
+                        </div>
+                      </div>
+                    </div>
+                  </label>
                 </div>
-                <div class="outer-cross">
-                  <div class="inner-cross">
-                    <div class="cross-base">
-                      <image class="cross"></image>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </td>
-          </tr>
-          <tr>
-            <td>
-              <div class="text-window">
-                <div class="list">
-                  <div class="list-item">
-                    <image class="list-bullet-collapsible"></image>
-                    <image class="inline-dash"></image>
-                    <image src="./assets/icons/wargaming.svg" class="list-bullet"></image>
-                    &nbsp;Wargaming
-                  </div>
-                  <div class="list-item2">
-                    <image class="vertical-dash"></image>
-                    <div class="list-item-nested">
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <div class="window-text">
+                  <div class="list">
+                    <input type="checkbox" id="wargaming"/>
+                    <input type="checkbox" id="wargaming-technologies"/>
+                    <div class="list-item">
+                      <label for="wargaming">
+                        <image class="list-bullet-collapsible-wargaming"></image>
+                      </label>
                       <image class="inline-dash"></image>
-                      <image src="./assets/icons/calendar.svg" class="list-bullet"></image>
-                      &nbsp;Feb 2021 - now
+                      <image src="./assets/icons/wargaming.svg" class="list-bullet"></image>
+                      &nbsp;Wargaming
                     </div>
-                  </div>
-                  <div class="list-item2">
-                    <image class="vertical-dash"></image>
-                    <div class="list-item-nested">
-                      <image class="inline-dash"></image>
-                      <image src="./assets/icons/computer.svg" class="list-bullet"></image>
-                      &nbsp;Backend Web Developer
+                    <div class="list-item2 collapsible-wargaming">
+                      <image class="vertical-dash"></image>
+                      <div class="list-item-nested">
+                        <image class="inline-dash"></image>
+                        <image src="./assets/icons/calendar.svg" class="list-bullet"></image>
+                        &nbsp;Feb 2021 - now
+                      </div>
                     </div>
-                  </div>
-                  <div class="list-item2">
-                    <image class="vertical-dash"></image>
-                    <div class="list-item-root">
-                      <image class="list-bullet-collapsible"></image>
-                      <div class="list-item-nested-root">
+                    <div class="list-item2 collapsible-wargaming">
+                      <image class="vertical-dash"></image>
+                      <div class="list-item-nested">
+                        <image class="inline-dash"></image>
+                        <image src="./assets/icons/computer.svg" class="list-bullet"></image>
+                        &nbsp;Backend Web Developer
+                      </div>
+                    </div>
+                    <div class="list-item2 collapsible-wargaming">
+                      <image class="vertical-dash"></image>
+                      <div class="list-item-root">
+                        <label for="wargaming-technologies">
+                          <image class="list-bullet-collapsible-wargaming-technologies"></image>
+                        </label>
+                        <div class="list-item-nested-root">
+                          <image class="inline-dash"></image>
+                          <image src="./assets/icons/chip.svg" class="list-bullet"></image>
+                          &nbsp;Technologies
+                        </div>
+                      </div>
+                    </div>
+                    <div class="list-item3 collapsible-wargaming collapsible-wargaming-technologies">
+                      <image class="vertical-dash"></image>
+                      <div class="list-item-nested">
                         <image class="inline-dash"></image>
                         <image src="./assets/icons/chip.svg" class="list-bullet"></image>
-                        &nbsp;Technologies
+                        &nbsp;Python3
+                      </div>
+                    </div>
+                    <div class="list-item3 collapsible-wargaming collapsible-wargaming-technologies">
+                      <image class="vertical-dash"></image>
+                      <div class="list-item-nested">
+                        <image class="inline-dash"></image>
+                        <image src="./assets/icons/chip.svg" class="list-bullet"></image>
+                        &nbsp;SQL (PostgreSQL)
+                      </div>
+                    </div>
+                    <div class="list-item3 collapsible-wargaming collapsible-wargaming-technologies">
+                      <image class="vertical-dash"></image>
+                      <div class="list-item-nested">
+                        <image class="inline-dash"></image>
+                        <image src="./assets/icons/chip.svg" class="list-bullet"></image>
+                        &nbsp;Redis
+                      </div>
+                    </div>
+                    <div class="list-item3 collapsible-wargaming collapsible-wargaming-technologies">
+                      <image class="vertical-dash"></image>
+                      <div class="list-item-nested">
+                        <image class="inline-dash"></image>
+                        <image src="./assets/icons/chip.svg" class="list-bullet"></image>
+                        &nbsp;Kafka
+                      </div>
+                    </div>
+                    <div class="list-item3 collapsible-wargaming collapsible-wargaming-technologies">
+                      <image class="vertical-dash"></image>
+                      <div class="list-item-nested">
+                        <image class="inline-dash"></image>
+                        <image src="./assets/icons/chip.svg" class="list-bullet"></image>
+                        &nbsp;RabbitMQ
+                      </div>
+                    </div>
+                    <div class="list-item3 collapsible-wargaming collapsible-wargaming-technologies">
+                      <image class="vertical-dash"></image>
+                      <div class="list-item-nested">
+                        <image class="inline-dash"></image>
+                        <image src="./assets/icons/chip.svg" class="list-bullet"></image>
+                        &nbsp;Celery
+                      </div>
+                    </div>
+                    <div class="list-item3 collapsible-wargaming collapsible-wargaming-technologies">
+                      <image class="vertical-dash"></image>
+                      <div class="list-item-nested">
+                        <image class="inline-dash"></image>
+                        <image src="./assets/icons/chip.svg" class="list-bullet"></image>
+                        &nbsp;Git
+                      </div>
+                    </div>
+                    <div class="list-item3 collapsible-wargaming collapsible-wargaming-technologies">
+                      <image class="vertical-dash"></image>
+                      <div class="list-item-nested">
+                        <image class="inline-dash"></image>
+                        <image src="./assets/icons/chip.svg" class="list-bullet"></image>
+                        &nbsp;Nginx
                       </div>
                     </div>
                   </div>
-                  <div class="list-item3">
-                    <image class="vertical-dash"></image>
-                    <div class="list-item-nested">
-                      <image class="inline-dash"></image>
-                      <image src="./assets/icons/chip.svg" class="list-bullet"></image>
-                      &nbsp;Python3
-                    </div>
-                  </div>
-                  <div class="list-item3">
-                    <image class="vertical-dash"></image>
-                    <div class="list-item-nested">
-                      <image class="inline-dash"></image>
-                      <image src="./assets/icons/chip.svg" class="list-bullet"></image>
-                      &nbsp;SQL (PostgreSQL)
-                    </div>
-                  </div>
-                  <div class="list-item3">
-                    <image class="vertical-dash"></image>
-                    <div class="list-item-nested">
-                      <image class="inline-dash"></image>
-                      <image src="./assets/icons/chip.svg" class="list-bullet"></image>
-                      &nbsp;Redis
-                    </div>
-                  </div>
-                  <div class="list-item3">
-                    <image class="vertical-dash"></image>
-                    <div class="list-item-nested">
-                      <image class="inline-dash"></image>
-                      <image src="./assets/icons/chip.svg" class="list-bullet"></image>
-                      &nbsp;Kafka
-                    </div>
-                  </div>
-                  <div class="list-item3">
-                    <image class="vertical-dash"></image>
-                    <div class="list-item-nested">
-                      <image class="inline-dash"></image>
-                      <image src="./assets/icons/chip.svg" class="list-bullet"></image>
-                      &nbsp;RabbitMQ
-                    </div>
-                  </div>
-                  <div class="list-item3">
-                    <image class="vertical-dash"></image>
-                    <div class="list-item-nested">
-                      <image class="inline-dash"></image>
-                      <image src="./assets/icons/chip.svg" class="list-bullet"></image>
-                      &nbsp;Celery
-                    </div>
-                  </div>
-                  <div class="list-item3">
-                    <image class="vertical-dash"></image>
-                    <div class="list-item-nested">
-                      <image class="inline-dash"></image>
-                      <image src="./assets/icons/chip.svg" class="list-bullet"></image>
-                      &nbsp;Git
-                    </div>
-                  </div>
-                  <div class="list-item3">
-                    <image class="vertical-dash"></image>
-                    <div class="list-item-nested">
-                      <image class="inline-dash"></image>
-                      <image src="./assets/icons/chip.svg" class="list-bullet"></image>
-                      &nbsp;Nginx
-                    </div>
-                  </div>
                 </div>
-              </div>
-            </td>
-          </tr>
-        </table>
-        <!-- Education -->
-        <table class="minh-window">  
-          <tr>
-            <td>
-              <div class="window-header">
-                <div class="window-header">
-                  <image src="./assets/icons/text.svg" class="window-icon"></image>
-                  <div class="window-name">Education</div>
+              </td>
+            </tr>
+          </table>
+          <!-- Education -->
+          <table class="window-minh closable-education">  
+            <tr>
+              <td>
+                <div class="header-window">
+                  <div class="header-window">
+                    <image src="./assets/icons/text.svg" class="icon-window"></image>
+                    <div class="window-name">Education</div>
+                  </div>
+                  <label for="education">
+                    <div class="outer-cross">
+                      <div class="inner-cross">
+                        <div class="cross-base">
+                          <image src="./assets/icons/cross.svg" class="cross"></image>
+                        </div>
+                      </div>
+                    </div>
+                  </label>
                 </div>
-                <div class="outer-cross">
-                  <div class="inner-cross">
-                    <div class="cross-base">
-                      <image src="./assets/icons/cross.svg" class="cross"></image>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </td>
-          </tr>
-          <tr>
-            <td>
-              <div class="text-window">
-                <div class="list">
-                  <div class="list-item">
-                    <image class="list-bullet-collapsible"></image>
-                    <image class="inline-dash"></image>
-                    <image src="./assets/icons/wargaming.svg" class="list-bullet"></image>
-                    &nbsp;Belarusian State University of Informatics and Radioelectronics
-                  </div>
-                  <div class="list-item2">
-                    <image class="vertical-dash"></image>
-                    <div class="list-item-nested">
-                      <image class="inline-dash"></image>
-                      <image src="./assets/icons/calendar.svg" class="list-bullet"></image>
-                      &nbsp;Sep 2018 - Jun 2022
-                    </div>
-                  </div>
-                  <div class="list-item2">
-                    <image class="vertical-dash"></image>
-                    <div class="list-item-nested">
-                      <image class="inline-dash"></image>
-                      <image src="./assets/icons/computer.svg" class="list-bullet"></image>
-                      &nbsp;System Engineer
-                    </div>
-                  </div>
-                  <div class="list-item">
-                    <image class="vertical-dash"></image>
-                    <image class="vertical-dash-2"></image>
-                    <image class="vertical-dash-3"></image>
-                    <div class="list-item-root">
-                      <image class="list-bullet-collapsible"></image>
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <div class="window-text">
+                  <div class="list">
+                    <input type="checkbox" id="bsuir"/>
+                    <input type="checkbox" id="cisco"/>
+                    <div class="list-item">
+                      <label for="bsuir">
+                        <image class="list-bullet-collapsible-bsuir"></image>
+                      </label>
                       <image class="inline-dash"></image>
                       <image src="./assets/icons/wargaming.svg" class="list-bullet"></image>
-                      &nbsp;<a href="https://www.credly.com/badges/a2e12555-7d7e-4f5e-8569-b0cb532eb41f">CCNA: Introduction to Networks</a>
+                      &nbsp;Belarusian State University of Informatics and Radioelectronics
                     </div>
-                  </div>
-                  <div class="list-item2">
-                    <image class="vertical-dash"></image>
-                    <div class="list-item-nested">
-                      <image class="inline-dash"></image>
-                      <image src="./assets/icons/calendar.svg" class="list-bullet"></image>
-                      &nbsp;May 2021
+                    <div class="list-item2 collapsible-bsuir">
+                      <image class="vertical-dash"></image>
+                      <div class="list-item-nested">
+                        <image class="inline-dash"></image>
+                        <image src="./assets/icons/calendar.svg" class="list-bullet"></image>
+                        &nbsp;Sep 2018 - Jun 2022
+                      </div>
+                    </div>
+                    <div class="list-item2 collapsible-bsuir">
+                      <image class="vertical-dash"></image>
+                      <div class="list-item-nested">
+                        <image class="inline-dash"></image>
+                        <image src="./assets/icons/computer.svg" class="list-bullet"></image>
+                        &nbsp;System Engineer
+                      </div>
+                    </div>
+                    <div class="list-item">
+                      <image class="vertical-dash"></image>
+                      <image class="vertical-dash-2 collapsible-bsuir"></image>
+                      <image class="vertical-dash-3 collapsible-bsuir"></image>
+                      <div class="list-item-root">
+                        <label for="cisco">
+                          <image class="list-bullet-collapsible-cisco"></image>
+                        </label>
+                        <image class="inline-dash"></image>
+                        <image src="./assets/icons/wargaming.svg" class="list-bullet"></image>
+                        &nbsp;<a href="https://www.credly.com/badges/a2e12555-7d7e-4f5e-8569-b0cb532eb41f">CCNA: Introduction to Networks</a>
+                      </div>
+                    </div>
+                    <div class="list-item2 collapsible-cisco">
+                      <image class="vertical-dash"></image>
+                      <div class="list-item-nested">
+                        <image class="inline-dash"></image>
+                        <image src="./assets/icons/calendar.svg" class="list-bullet"></image>
+                        &nbsp;May 2021
+                      </div>
                     </div>
                   </div>
                 </div>
-              </div>
-            </td>
-          </tr>
-        </table>
-      </div>
+              </td>
+            </tr>
+          </table>
+        </div>
       </div>
     </div>
     <div class="footer">
@@ -547,34 +580,48 @@
             <image src="./assets/icons/start.svg" class="windows-icon"></image>
             <div class="doc-name">Start</div>
           </div>
-          <div class="doc-app">
-            <image src="./assets/icons/image.svg" class="app-icon"></image>
-            <div class="doc-name">Photo.jpg</div>
-          </div>
-          <div class="doc-app">
-            <image src="./assets/icons/text.svg" class="app-icon"></image>
-            <div class="doc-name">Introduction</div>
-          </div>
-          <div class="doc-app">
-            <image src="./assets/icons/text.svg" class="app-icon"></image>
-            <div class="doc-name">Contacts</div>
-          </div>
-          <div class="doc-app">
-            <image src="./assets/icons/text.svg" class="app-icon"></image>
-            <div class="doc-name">Experience</div>
-          </div>
-          <div class="doc-app">
-            <image src="./assets/icons/text.svg" class="app-icon"></image>
-            <div class="doc-name">Skills</div>
-          </div>
-          <div class="doc-app">
-            <image src="./assets/icons/text.svg" class="app-icon"></image>
-            <div class="doc-name">Education</div>
-          </div>
-          <div class="doc-app">
-            <image src="./assets/icons/text.svg" class="app-icon"></image>
-            <div class="doc-name">Languages</div>
-          </div>
+          <label for="photo">
+            <div class="doc-app">
+              <image src="./assets/icons/image.svg" class="app-icon"></image>
+              <div class="doc-name">Photo.jpg</div>
+            </div>
+          </label>
+          <label for="introduction">
+            <div class="doc-app">
+              <image src="./assets/icons/text.svg" class="app-icon"></image>
+              <div class="doc-name">Introduction</div>
+            </div>
+          </label>
+          <label for="contacts">
+            <div class="doc-app">
+              <image src="./assets/icons/text.svg" class="app-icon"></image>
+              <div class="doc-name">Contacts</div>
+            </div>
+          </label>
+          <label for="experience">
+            <div class="doc-app">
+              <image src="./assets/icons/text.svg" class="app-icon"></image>
+              <div class="doc-name">Experience</div>
+            </div>
+          </label>
+          <label for="skills">
+            <div class="doc-app">
+              <image src="./assets/icons/text.svg" class="app-icon"></image>
+              <div class="doc-name">Skills</div>
+            </div>
+          </label>
+          <label for="education">
+            <div class="doc-app">
+              <image src="./assets/icons/text.svg" class="app-icon"></image>
+              <div class="doc-name">Education</div>
+            </div>
+          </label>
+          <label for="languages">
+            <div class="doc-app">
+              <image src="./assets/icons/text.svg" class="app-icon"></image>
+              <div class="doc-name">Languages</div>
+            </div>
+          </label>
         </div>
       </div>
     </div>
