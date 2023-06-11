@@ -7,20 +7,23 @@
 }
 
 .cell-image {
-    background-image: url('./../assets/photo.jpg');
+    background-image: url('./../assets/photo.png');
     background-size: cover;
     display: flex;
     height: var(--photo-height);
     width: var(--photo-width);
+    image-rendering: pixelated;
 }
 
 .introduction-centered {
+    --padding: 1em;
     display: flex;
     flex-direction: column;
     width: min-content;
-    height: 100%;
+    height: calc(100% + var(--padding) * -2);
     margin: auto;
     justify-content: center;
+    padding: var(--padding);
 }
 
 .text-window-height {

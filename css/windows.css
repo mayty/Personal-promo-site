@@ -80,6 +80,6 @@ table[class~=window] {
     border-image-slice: 2 fill;
 }
 
-.window-name {
+.win-name {
     margin-top: calc(var(--header-height) * 0.2);
 }

@@ -3,6 +3,7 @@
 <html lang="en">  
    <head>
       <meta charset = "utf-8">
+      <meta name="viewport" content="width=750, initial-scale=1">
       <title>Pavel Pikirenia</title>
       <link rel="stylesheet" href="./css/style.css">
       <link rel="stylesheet" href="./css/windows.css">
@@ -30,7 +31,7 @@
               <div class="header-window">
                 <div class="header-window">
                   <image src="./assets/icons/image.svg" class="icon-window"></image>
-                  <div class="window-name">Photo.jpg</div>
+                  <div class="win-name">Photo.jpg</div>
                 </div>
                 <label for="photo">
                   <div class="outer-cross">
@@ -55,7 +56,7 @@
               <div class="header-window">
                 <div class="header-window">
                   <image src="./assets/icons/text.svg" class="icon-window"></image>
-                  <div class="window-name">Introduction</div>
+                  <div class="win-name">Introduction</div>
                 </div>
                 <label for="introduction">
                   <div class="outer-cross">
@@ -91,7 +92,7 @@
                 <div class="header-window">
                   <div class="header-window">
                     <image src="./assets/icons/text.svg" class="icon-window"></image>
-                    <div class="window-name">Contacts</div>
+                    <div class="win-name">Contacts</div>
                   </div>
                   <label for="contacts">
                     <div class="outer-cross">
@@ -145,7 +146,7 @@
                 <div class="header-window">
                   <div class="header-window">
                     <image src="./assets/icons/text.svg" class="icon-window"></image>
-                    <div class="window-name">Skills</div>
+                    <div class="win-name">Skills</div>
                   </div>
                   <label for="skills">
                     <div class="outer-cross">
@@ -163,57 +164,34 @@
               <td>
                 <div class="window-text">
                   <div class="list">
-                    <input type="checkbox" id="hard-skills"/>
-                    <input type="checkbox" id="soft-skills"/>
+                    <input type="checkbox" id="python"/>
+                    <input type="checkbox" id="infrastructure"/>
+                    <input type="checkbox" id="additional-software"/>
                     <div class="list-item">
-                      <label for="hard-skills">
-                        <image class="list-bullet-collapsible-hard-skills"></image>
+                      <label for="python">
+                        <image class="list-bullet-collapsible-python"></image>
                       </label>
                       <image class="inline-dash"></image>
-                      <image src="./assets/icons/wargaming.svg" class="list-bullet"></image>
-                      &nbsp;Hard Skills
+                      <image src="./assets/icons/python.svg" class="list-bullet"></image>
+                      &nbsp;Python
                     </div>
-                    <div class="list-item2 collapsible-hard-skills">
+                    <div class="list-item2 collapsible-python">
                       <image class="vertical-dash"></image>
                       <div class="list-item-nested">
                         <image class="inline-dash"></image>
                         <image src="./assets/icons/chip.svg" class="list-bullet"></image>
-                        &nbsp;Python3
+                        &nbsp;SQLAlchemy
                       </div>
                     </div>
-                    <div class="list-item2 collapsible-hard-skills">
+                    <div class="list-item2 collapsible-python">
                       <image class="vertical-dash"></image>
                       <div class="list-item-nested">
                         <image class="inline-dash"></image>
                         <image src="./assets/icons/chip.svg" class="list-bullet"></image>
-                        &nbsp;SQL (PostgreSQL)
+                        &nbsp;Falcon
                       </div>
                     </div>
-                    <div class="list-item2 collapsible-hard-skills">
-                      <image class="vertical-dash"></image>
-                      <div class="list-item-nested">
-                        <image class="inline-dash"></image>
-                        <image src="./assets/icons/chip.svg" class="list-bullet"></image>
-                        &nbsp;Redis
-                      </div>
-                    </div>
-                    <div class="list-item2 collapsible-hard-skills">
-                      <image class="vertical-dash"></image>
-                      <div class="list-item-nested">
-                        <image class="inline-dash"></image>
-                        <image src="./assets/icons/chip.svg" class="list-bullet"></image>
-                        &nbsp;Kafka
-                      </div>
-                    </div>
-                    <div class="list-item2 collapsible-hard-skills">
-                      <image class="vertical-dash"></image>
-                      <div class="list-item-nested">
-                        <image class="inline-dash"></image>
-                        <image src="./assets/icons/chip.svg" class="list-bullet"></image>
-                        &nbsp;RabbitMQ
-                      </div>
-                    </div>
-                    <div class="list-item2 collapsible-hard-skills">
+                    <div class="list-item2 collapsible-python">
                       <image class="vertical-dash"></image>
                       <div class="list-item-nested">
                         <image class="inline-dash"></image>
@@ -221,15 +199,62 @@
                         &nbsp;Celery
                       </div>
                     </div>
-                    <div class="list-item2 collapsible-hard-skills">
+                    <div class="list-item2 collapsible-python">
                       <image class="vertical-dash"></image>
                       <div class="list-item-nested">
                         <image class="inline-dash"></image>
                         <image src="./assets/icons/chip.svg" class="list-bullet"></image>
-                        &nbsp;Git
+                        &nbsp;tox
                       </div>
                     </div>
-                    <div class="list-item2 collapsible-hard-skills">
+                    <div class="list-item">
+                      <image class="vertical-dash"></image>
+                      <image class="vertical-dash-2 collapsible-python"></image>
+                      <image class="vertical-dash-3 collapsible-python"></image>
+                      <image class="vertical-dash-4 collapsible-python"></image>
+                      <image class="vertical-dash-5 collapsible-python"></image>
+                      <div class="list-item-root">
+                        <label for="infrastructure">
+                          <image class="list-bullet-collapsible-infrastructure"></image>
+                        </label>
+                        <image class="inline-dash"></image>
+                        <image src="./assets/icons/chip.svg" class="list-bullet"></image>
+                        &nbsp;Infrastructure
+                      </div>
+                    </div>
+                    <div class="list-item2 collapsible-infrastructure">
+                      <image class="vertical-dash"></image>
+                      <div class="list-item-nested">
+                        <image class="inline-dash"></image>
+                        <image src="./assets/icons/chip.svg" class="list-bullet"></image>
+                        &nbsp;PostgreSQL
+                      </div>
+                    </div>
+                    <div class="list-item2 collapsible-infrastructure">
+                      <image class="vertical-dash"></image>
+                      <div class="list-item-nested">
+                        <image class="inline-dash"></image>
+                        <image src="./assets/icons/chip.svg" class="list-bullet"></image>
+                        &nbsp;Redis
+                      </div>
+                    </div>
+                    <div class="list-item2 collapsible-infrastructure">
+                      <image class="vertical-dash"></image>
+                      <div class="list-item-nested">
+                        <image class="inline-dash"></image>
+                        <image src="./assets/icons/chip.svg" class="list-bullet"></image>
+                        &nbsp;Kafka
+                      </div>
+                    </div>
+                    <div class="list-item2 collapsible-infrastructure">
+                      <image class="vertical-dash"></image>
+                      <div class="list-item-nested">
+                        <image class="inline-dash"></image>
+                        <image src="./assets/icons/chip.svg" class="list-bullet"></image>
+                        &nbsp;RabbitMQ
+                      </div>
+                    </div>
+                    <div class="list-item2 collapsible-infrastructure">
                       <image class="vertical-dash"></image>
                       <div class="list-item-nested">
                         <image class="inline-dash"></image>
@@ -239,29 +264,58 @@
                     </div>
                     <div class="list-item">
                       <image class="vertical-dash"></image>
-                      <image class="vertical-dash-2 collapsible-hard-skills"></image>
-                      <image class="vertical-dash-3 collapsible-hard-skills"></image>
-                      <image class="vertical-dash-4 collapsible-hard-skills"></image>
-                      <image class="vertical-dash-5 collapsible-hard-skills"></image>
-                      <image class="vertical-dash-6 collapsible-hard-skills"></image>
-                      <image class="vertical-dash-7 collapsible-hard-skills"></image>
-                      <image class="vertical-dash-8 collapsible-hard-skills"></image>
-                      <image class="vertical-dash-9 collapsible-hard-skills"></image>
+                      <image class="vertical-dash-2 collapsible-infrastructure"></image>
+                      <image class="vertical-dash-3 collapsible-infrastructure"></image>
+                      <image class="vertical-dash-4 collapsible-infrastructure"></image>
+                      <image class="vertical-dash-5 collapsible-infrastructure"></image>
+                      <image class="vertical-dash-6 collapsible-infrastructure"></image>
                       <div class="list-item-root">
-                        <label for="soft-skills">
-                          <image class="list-bullet-collapsible-soft-skills"></image>
+                        <label for="additional-software">
+                          <image class="list-bullet-collapsible-additional-software"></image>
                         </label>
                         <image class="inline-dash"></image>
-                        <image src="./assets/icons/wargaming.svg" class="list-bullet"></image>
-                        &nbsp;Soft Skills
+                        <image src="./assets/icons/chip.svg" class="list-bullet"></image>
+                        &nbsp;Additional Software
                       </div>
                     </div>
-                    <div class="list-item2 collapsible-soft-skills">
+                    <div class="list-item2 collapsible-additional-software">
                       <image class="vertical-dash"></image>
                       <div class="list-item-nested">
                         <image class="inline-dash"></image>
                         <image src="./assets/icons/chip.svg" class="list-bullet"></image>
-                        &nbsp;IDK
+                        &nbsp;Jenkins
+                      </div>
+                    </div>
+                    <div class="list-item2 collapsible-additional-software">
+                      <image class="vertical-dash"></image>
+                      <div class="list-item-nested">
+                        <image class="inline-dash"></image>
+                        <image src="./assets/icons/chip.svg" class="list-bullet"></image>
+                        &nbsp;TeamCity
+                      </div>
+                    </div>
+                    <div class="list-item2 collapsible-additional-software">
+                      <image class="vertical-dash"></image>
+                      <div class="list-item-nested">
+                        <image class="inline-dash"></image>
+                        <image src="./assets/icons/chip.svg" class="list-bullet"></image>
+                        &nbsp;Confluence
+                      </div>
+                    </div>
+                    <div class="list-item2 collapsible-additional-software">
+                      <image class="vertical-dash"></image>
+                      <div class="list-item-nested">
+                        <image class="inline-dash"></image>
+                        <image src="./assets/icons/chip.svg" class="list-bullet"></image>
+                        &nbsp;Jira
+                      </div>
+                    </div>
+                    <div class="list-item2 collapsible-additional-software">
+                      <image class="vertical-dash"></image>
+                      <div class="list-item-nested">
+                        <image class="inline-dash"></image>
+                        <image src="./assets/icons/chip.svg" class="list-bullet"></image>
+                        &nbsp;Git
                       </div>
                     </div>
                   </div>
@@ -276,7 +330,7 @@
                 <div class="header-window">
                   <div class="header-window">
                     <image src="./assets/icons/text.svg" class="icon-window"></image>
-                    <div class="window-name">Languages</div>
+                    <div class="win-name">Languages</div>
                   </div>
                   <label for="languages">
                     <div class="outer-cross">
@@ -367,7 +421,7 @@
                 <div class="header-window">
                   <div class="header-window">
                     <image src="./assets/icons/text.svg" class="icon-window"></image>
-                    <div class="window-name">Experience</div>
+                    <div class="win-name">Experience</div>
                   </div>
                   <label for="experience">
                     <div class="outer-cross">
@@ -429,7 +483,7 @@
                       <div class="list-item-nested">
                         <image class="inline-dash"></image>
                         <image src="./assets/icons/chip.svg" class="list-bullet"></image>
-                        &nbsp;Python3
+                        &nbsp;Python
                       </div>
                     </div>
                     <div class="list-item3 collapsible-wargaming collapsible-wargaming-technologies">
@@ -500,7 +554,7 @@
                 <div class="header-window">
                   <div class="header-window">
                     <image src="./assets/icons/text.svg" class="icon-window"></image>
-                    <div class="window-name">Education</div>
+                    <div class="win-name">Education</div>
                   </div>
                   <label for="education">
                     <div class="outer-cross">
@@ -525,7 +579,7 @@
                         <image class="list-bullet-collapsible-bsuir"></image>
                       </label>
                       <image class="inline-dash"></image>
-                      <image src="./assets/icons/wargaming.svg" class="list-bullet"></image>
+                      <image src="./assets/icons/bsuir.svg" class="list-bullet"></image>
                       &nbsp;Belarusian State University of Informatics and Radioelectronics
                     </div>
                     <div class="list-item2 collapsible-bsuir">
@@ -553,7 +607,7 @@
                           <image class="list-bullet-collapsible-cisco"></image>
                         </label>
                         <image class="inline-dash"></image>
-                        <image src="./assets/icons/wargaming.svg" class="list-bullet"></image>
+                        <image src="./assets/icons/cisco.svg" class="list-bullet"></image>
                         &nbsp;<a href="https://www.credly.com/badges/a2e12555-7d7e-4f5e-8569-b0cb532eb41f">CCNA: Introduction to Networks</a>
                       </div>
                     </div>
@@ -586,22 +640,10 @@
               <div class="doc-name">Photo.jpg</div>
             </div>
           </label>
-          <label for="introduction">
-            <div class="doc-app">
-              <image src="./assets/icons/text.svg" class="app-icon"></image>
-              <div class="doc-name">Introduction</div>
-            </div>
-          </label>
           <label for="contacts">
             <div class="doc-app">
               <image src="./assets/icons/text.svg" class="app-icon"></image>
               <div class="doc-name">Contacts</div>
-            </div>
-          </label>
-          <label for="experience">
-            <div class="doc-app">
-              <image src="./assets/icons/text.svg" class="app-icon"></image>
-              <div class="doc-name">Experience</div>
             </div>
           </label>
           <label for="skills">
@@ -610,16 +652,28 @@
               <div class="doc-name">Skills</div>
             </div>
           </label>
-          <label for="education">
-            <div class="doc-app">
-              <image src="./assets/icons/text.svg" class="app-icon"></image>
-              <div class="doc-name">Education</div>
-            </div>
-          </label>
           <label for="languages">
             <div class="doc-app">
               <image src="./assets/icons/text.svg" class="app-icon"></image>
               <div class="doc-name">Languages</div>
+            </div>
+          </label>
+          <label for="introduction">
+            <div class="doc-app">
+              <image src="./assets/icons/text.svg" class="app-icon"></image>
+              <div class="doc-name">Introduction</div>
+            </div>
+          </label>
+          <label for="experience">
+            <div class="doc-app">
+              <image src="./assets/icons/text.svg" class="app-icon"></image>
+              <div class="doc-name">Experience</div>
+            </div>
+          </label>
+          <label for="education">
+            <div class="doc-app">
+              <image src="./assets/icons/text.svg" class="app-icon"></image>
+              <div class="doc-name">Education</div>
             </div>
           </label>
         </div>

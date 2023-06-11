@@ -75,23 +75,39 @@ input {
     content: url("../assets/icons/plus.svg");
 }
 
-#hard-skills:checked ~ div[class~=collapsible-hard-skills] {
+#python:checked ~ div[class~=collapsible-python] {
     display: none;
 }
 
-#hard-skills:checked ~ div[class|=list-item] > img[class~=collapsible-hard-skills] {
+#python:checked ~ div[class|=list-item] > img[class~=collapsible-python] {
     display: none;
 }
 
-#hard-skills:checked ~ * .list-bullet-collapsible-hard-skills {
+#python:checked ~ * .list-bullet-collapsible-python {
     content: url("../assets/icons/plus.svg");
 }
 
-#soft-skills:checked ~ div[class~=collapsible-soft-skills] {
+#infrastructure:checked ~ div[class~=collapsible-infrastructure] {
     display: none;
 }
 
-#soft-skills:checked ~ * .list-bullet-collapsible-soft-skills {
+#infrastructure:checked ~ div[class|=list-item] > img[class~=collapsible-infrastructure] {
+    display: none;
+}
+
+#infrastructure:checked ~ * .list-bullet-collapsible-infrastructure {
+    content: url("../assets/icons/plus.svg");
+}
+
+#additional-software:checked ~ div[class~=collapsible-additional-software] {
+    display: none;
+}
+
+#additional-software:checked ~ div[class|=list-item] > img[class~=collapsible-additional-software] {
+    display: none;
+}
+
+#additional-software:checked ~ * .list-bullet-collapsible-additional-software {
     content: url("../assets/icons/plus.svg");
 }
 
@@ -99,26 +115,54 @@ input {
     visibility: hidden;
 }
 
+#photo:checked ~div[class~=footer] > div[class~=doc-bar] > div[class~=doc-app-container] > label[for=photo] > div[class=doc-app] {
+    border-image-source: var(--closed-border);
+}
+
 #introduction:checked ~ div[class~=desktop] > div[class~=header-container] > table[class~=closable-introduction] {
     visibility: hidden;
+}
+
+#introduction:checked ~div[class~=footer] > div[class~=doc-bar] > div[class~=doc-app-container] > label[for=introduction] > div[class=doc-app] {
+    border-image-source: var(--closed-border);
 }
 
 #contacts:checked ~ div[class~=desktop] > div[class~=main-container] > div[class~=side-data] > table[class~=closable-contacts] {
     visibility: hidden;
 }
 
+#contacts:checked ~div[class~=footer] > div[class~=doc-bar] > div[class~=doc-app-container] > label[for=contacts] > div[class=doc-app] {
+    border-image-source: var(--closed-border);
+}
+
 #skills:checked ~ div[class~=desktop] > div[class~=main-container] > div[class~=side-data] > table[class~=closable-skills] {
     visibility: hidden;
+}
+
+#skills:checked ~div[class~=footer] > div[class~=doc-bar] > div[class~=doc-app-container] > label[for=skills] > div[class=doc-app] {
+    border-image-source: var(--closed-border);
 }
 
 #languages:checked ~ div[class~=desktop] > div[class~=main-container] > div[class~=side-data] > table[class~=closable-languages] {
     visibility: hidden;
 }
 
+#languages:checked ~div[class~=footer] > div[class~=doc-bar] > div[class~=doc-app-container] > label[for=languages] > div[class=doc-app] {
+    border-image-source: var(--closed-border);
+}
+
 #experience:checked ~ div[class~=desktop] > div[class~=main-container] > div[class~=big-part-container] > table[class~=closable-experience] {
     visibility: hidden;
 }
 
+#experience:checked ~div[class~=footer] > div[class~=doc-bar] > div[class~=doc-app-container] > label[for=experience] > div[class=doc-app] {
+    border-image-source: var(--closed-border);
+}
+
 #education:checked ~ div[class~=desktop] > div[class~=main-container] > div[class~=big-part-container] > table[class~=closable-education] {
     visibility: hidden;
+}
+
+#education:checked ~div[class~=footer] > div[class~=doc-bar] > div[class~=doc-app-container] > label[for=education] > div[class=doc-app] {
+    border-image-source: var(--closed-border);
 }

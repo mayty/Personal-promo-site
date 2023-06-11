@@ -52,11 +52,12 @@ div[class=doc-app-container] > label {
     display: inline-flex;
 }
 
-label[for=languages] {
+div[class=doc-app-container] > label:last-child {
     margin-right: calc(2 * var(--border-width));
 }
 
 .doc-app {
+    --closed-border: url(./../assets/borders/border-dock-closed.png);
     gap: var(--border-width);
     align-items: center;
     display: flex;
@@ -70,6 +71,13 @@ label[for=languages] {
     border-image-slice: 2 fill;
     z-index: 2;
     cursor: pointer;
+    -webkit-tap-highlight-color: transparent;
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
 }
 
 .windows-icon {
