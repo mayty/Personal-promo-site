@@ -51,7 +51,19 @@ input {
     display: none;
 }
 
+#wargaming-technologies:checked ~ div[class~=list-item2] > img[class~=collapsible-wargaming-technologies] {
+    display: none;
+}
+
 #wargaming-technologies:checked ~ * .list-bullet-collapsible-wargaming-technologies {
+    content: url("../assets/icons/plus.svg");
+}
+
+#wargaming-responsibilities:checked ~ div[class~=collapsible-wargaming-responsibilities] {
+    display: none;
+}
+
+#wargaming-responsibilities:checked ~ * .list-bullet-collapsible-wargaming-responsibilities {
     content: url("../assets/icons/plus.svg");
 }
 

@@ -9,6 +9,7 @@
 
 html {
     touch-action: manipulation;
+    --min-width: calc(720px);
 }
 
 * {
@@ -24,7 +25,7 @@ body {
     --border-width: 2px;
     --max-width: 1000px;
     --target-padding: 10px;
-    --header-height: 1.2em;
+    --header-height: calc(var(--font-size) * 1.2);
     background-color: #57A8A8;
     font-family: 'W95FA';
 }
