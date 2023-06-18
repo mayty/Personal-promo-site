@@ -14,7 +14,6 @@
     background-color: #0000A8;
     border-top-width: var(--border-width);
     border-top-style: solid;
-    image-rendering: pixelated;
     border-image-source: url(./../assets/borders/border-dockbar.png);
     border-image-slice: 2 fill;
     z-index: 2;
@@ -41,7 +40,6 @@
     width: auto;
     height: var(--window-height);
     border-style: solid;
-    image-rendering: pixelated;
     border-image-source: url(./../assets/borders/border-dock.png);
     border-image-slice: 2 fill;
     z-index: 2;
@@ -66,7 +64,6 @@ div[class=doc-app-container] > label:last-child {
     width: 100%;
     height: var(--window-height);
     border-style: solid;
-    image-rendering: pixelated;
     border-image-source: url(./../assets/borders/border-dock.png);
     border-image-slice: 2 fill;
     z-index: 2;

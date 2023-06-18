@@ -3,16 +3,16 @@
     flex-direction: row;
     width: 100%;
     --inline-picture-size: 0.8em;
-    --long-dash-length: calc(var(--inline-picture-size) * 11 / 7);
+    --long-dash-length: calc(var(--inline-picture-size) * 9 / 7);
     --long-dash-height: calc(var(--inline-picture-size) * 3 / 7);
 }
 
 .list {
     display: flex;
     flex-direction: column;
-    gap: 0.2em;
+    gap: calc(var(--inline-picture-size) * 3 / 7);
     padding: 1em;
-    --default-long-dash-margin-top: calc(var(--long-dash-length) * (-8 / 11));
+    --default-long-dash-margin-top: calc(var(--long-dash-length) * (-1.5 / 9));
 }
 
 .inline-dash {
@@ -27,10 +27,13 @@ img[class|="vertical-dash"] {
     --default-long-dash-margin-left: calc((var(--long-dash-length) - var(--inline-picture-size)) * -0.5);
     width: var(--long-dash-length);
     height: var(--long-dash-height);
-    align-self: center;
+    align-self: start;
     transform: rotate(90deg);
     content: url("../assets/icons/long-dashes.svg");
     user-select: none;
+    margin-top: calc(
+        var(--default-long-dash-margin-top) - (var(--multiplicator) * var(--long-dash-length) * 10 / 9)
+    );
 }
 
 img[class^="vertical-dash-"] {
@@ -41,64 +44,40 @@ img[class^="vertical-dash-"] {
 }
 
 .vertical-dash {
+    --multiplicator: 0;
     margin-left: var(--default-long-dash-margin-left);
-    margin-top: var(--default-long-dash-margin-top);
 }
 
 .vertical-dash-2 {
-    margin-top: calc(
-        (var(--base-multiplier) + 1 * var(--vertical-multiplier-step))
-        * var(--default-long-dash-margin-top)
-    );
+    --multiplicator: 1;
 }
 
 .vertical-dash-3 {
-    margin-top: calc(
-        (var(--base-multiplier) + 2 * var(--vertical-multiplier-step))
-        * var(--default-long-dash-margin-top)
-    );
+    --multiplicator: 2;
 }
 
 .vertical-dash-4 {
-    margin-top: calc(
-        (var(--base-multiplier) + 3 * var(--vertical-multiplier-step))
-        * var(--default-long-dash-margin-top)
-    );
+    --multiplicator: 3;
 }
 
 .vertical-dash-5 {
-    margin-top: calc(
-        (var(--base-multiplier) + 4 * var(--vertical-multiplier-step))
-        * var(--default-long-dash-margin-top)
-    );
+    --multiplicator: 4;
 }
 
 .vertical-dash-6 {
-    margin-top: calc(
-        (var(--base-multiplier) + 5 * var(--vertical-multiplier-step))
-        * var(--default-long-dash-margin-top)
-    );
+    --multiplicator: 5;
 }
 
 .vertical-dash-7 {
-    margin-top: calc(
-        (var(--base-multiplier) + 6 * var(--vertical-multiplier-step))
-        * var(--default-long-dash-margin-top)
-    );
+    --multiplicator: 6;
 }
 
 .vertical-dash-8 {
-    margin-top: calc(
-        (var(--base-multiplier) + 7 * var(--vertical-multiplier-step))
-        * var(--default-long-dash-margin-top)
-    );
+    --multiplicator: 7;
 }
 
 .vertical-dash-9 {
-    margin-top: calc(
-        (var(--base-multiplier) + 8 * var(--vertical-multiplier-step))
-        * var(--default-long-dash-margin-top)
-    );
+    --multiplicator: 8;
 }
 
 label {
@@ -144,6 +123,12 @@ img[class|="list-bullet-collapsible"] {
 div[class^="list-item"] {
     display: flex;
     width: max-content;
+    height: var(--inline-picture-size);
+    align-items: center;    
+}
+
+div[class^="list-item"] > *:not(img) {
+    margin-top: calc(var(--inline-picture-size) * 0.1);
 }
 
 .list-item2 {

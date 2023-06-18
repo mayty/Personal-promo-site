@@ -7,8 +7,7 @@
 
 .profile-photo {
     height: var(--photo-height);
-    image-rendering: pixelated;
-    margin-bottom: calc(var(--border-width) * -1.4);
+    display: flex;
 }
 
 .introduction-centered {

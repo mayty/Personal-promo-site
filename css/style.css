@@ -10,6 +10,7 @@
 html {
     touch-action: manipulation;
     --min-width: calc(720px);
+    image-rendering: pixelated;
 }
 
 * {

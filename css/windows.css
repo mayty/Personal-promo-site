@@ -1,7 +1,6 @@
 table[class^="window"] {
     border-width: var(--border-width);
     border-style: solid;
-    image-rendering: pixelated;
     border-image-source: url(./../assets/borders/border.png);
     border-image-slice: 2 fill;
 }
@@ -13,7 +12,6 @@ table[class~=window] {
 .window-text {
     border-width: var(--border-width);
     border-style: solid;
-    image-rendering: pixelated;
     border-image-source: url(./../assets/borders/border-text.png);
     border-image-slice: 2 fill;
 }
@@ -42,11 +40,13 @@ table[class~=window] {
     --cross-height: calc(var(--header-height) - (var(--border-width) * 5));
     --cross-width: calc(var(--cross-height) * 8 / 7);
     justify-content: space-between;
+    align-items: center;
     display: flex;
     flex-direction: row;
     background-color: #0000A8;
     color: #FFFFFF;
-    gap: var(--border-width)
+    gap: var(--border-width);
+    height: var(--header-height);
 }
 
 .outer-cross {
