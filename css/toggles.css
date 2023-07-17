@@ -178,3 +178,62 @@ input {
 #education:checked ~div[class~=footer] > div[class~=doc-bar] > div[class~=doc-app-container] > label[for=education] > div[class=doc-app] {
     border-image-source: var(--closed-border);
 }
+
+.wrapper {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0);
+    z-index: -1;
+    margin:0;
+    padding: 0;
+}
+
+#all:checked + #all1:checked ~ .wrapper {
+    animation-name: reload;
+    animation-duration: 2s;
+    animation-timing-function: linear;
+    z-index: -1;
+}
+
+#all:checked + #all1:not(:checked) ~ .wrapper {
+    animation-name: reload1;
+    animation-duration: 2s;
+    animation-timing-function: linear;
+    z-index: -1;
+}
+
+#all:not(:checked) + #all1:not(:checked) ~ .wrapper {
+    animation-name: load;
+    animation-duration: 2s;
+    animation-timing-function: linear;
+    z-index: -1;
+}
+
+#all:checked ~ div[class~=footer] > div[class~=doc-bar] > div[class~=doc-app-container] > label[for=all] {
+    display: none;
+}
+
+#all:not(:checked) ~ div[class~=footer] > div[class~=doc-bar] > div[class~=doc-app-container] > label[for=all1] {
+    display: none;
+}
+
+@keyframes reload {
+    0% {background-color: rgba(0, 0, 0, 0); z-index: 5;}
+    40% {background-color: rgba(0, 0, 0, 1); z-index: 5;}
+    60% {background-color: rgba(0, 0, 0, 1); z-index: 5;}
+    100% {background-color: rgba(0, 0, 0, 0); z-index: 5;}
+}
+
+@keyframes reload1 {
+    0% {background-color: rgba(0, 0, 0, 0); z-index: 5;}
+    40% {background-color: rgba(0, 0, 0, 1); z-index: 5;}
+    60% {background-color: rgba(0, 0, 0, 1); z-index: 5;}
+    100% {background-color: rgba(0, 0, 0, 0); z-index: 5;}
+}
+
+@keyframes load {
+    0% {background-color: rgba(0, 0, 0, 1); z-index: 5;}
+    50% {background-color: rgba(0, 0, 0, 1); z-index: 5;}
+    100% {background-color: rgba(0, 0, 0, 0); z-index: 5;}
+}

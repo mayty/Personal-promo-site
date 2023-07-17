@@ -1,5 +1,5 @@
 <svg
-    xmlns="http://www.w3.org/2000/svg" viewBox="0 0 9 9"  preserveAspectRatio="none"
+    xmlns="http://www.w3.org/2000/svg" viewBox="0 0 9 9"  preserveAspectRatio="meet"
 >
 <rect x="0" y="0" height="9" width="9" style="fill:#808080;"/>
 <rect x="1" y="1" height="7" width="7" style="fill:#ffffff;"/>

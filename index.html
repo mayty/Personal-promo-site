@@ -1,20 +1,54 @@
 <!DOCTYPE html>
 
-<html lang="en">  
+<html lang="en">
    <head>
-      <meta charset = "utf-8">
-      <meta name="viewport" content="width=720px">
-      <title>Pavel Pikirenia</title>
-      <link rel="stylesheet" href="./css/style.css">
-      <link rel="stylesheet" href="./css/windows.css">
-      <link rel="stylesheet" href="./css/header.css">
-      <link rel="stylesheet" href="./css/footer.css">
-      <link rel="stylesheet" href="./css/main.css">
-      <link rel="stylesheet" href="./css/toggles.css">
-      <link rel="icon" href="./assets/icons/favicon.svg" type="image/svg+xml" sizes="any">
-   </head>
+    <meta charset = "utf-8">
+    <meta name="viewport" content="width=720">
+    <title>Pavel Pikirenia</title>
+    <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="/css/windows.css">
+    <link rel="stylesheet" href="/css/header.css">
+    <link rel="stylesheet" href="/css/footer.css">
+    <link rel="stylesheet" href="/css/main.css">
+    <link rel="stylesheet" href="/css/toggles.css">
+
+    <!-- Microsoft stuff -->
+    <meta name="msapplication-TileColor" content="#FFFFFF">
+    <meta name="msapplication-TileImage" content="favicon-144.png">
+    <meta name="application-name" content="Pavel Pikirenia">
+    <meta name="msapplication-tooltip" content="Pavel Pikirenia's personal website">
+    <meta name="msapplication-config" content="ieconfig.xml">
+
+    <!-- For iPhone 6 Plus with @3× display: -->
+    <link rel="apple-touch-icon-precomposed" sizes="180x180" href="apple-touch-icon-180x180-precomposed.png">
+    <!-- For iPad with @2× display running iOS ≥ 7: -->
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="apple-touch-icon-152x152-precomposed.png">
+    <!-- For iPad with @2× display running iOS ≤ 6: -->
+    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="apple-touch-icon-144x144-precomposed.png">
+    <!-- For iPhone with @2× display running iOS ≥ 7: -->
+    <link rel="apple-touch-icon-precomposed" sizes="120x120" href="apple-touch-icon-120x120-precomposed.png">
+    <!-- For iPhone with @2× display running iOS ≤ 6: -->
+    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="apple-touch-icon-114x114-precomposed.png">
+    <!-- For the iPad mini and the first- and second-generation iPad (@1× display) on iOS ≥ 7: -->
+    <link rel="apple-touch-icon-precomposed" sizes="76x76" href="apple-touch-icon-76x76-precomposed.png">
+    <!-- For the iPad mini and the first- and second-generation iPad (@1× display) on iOS ≤ 6: -->
+    <link rel="apple-touch-icon-precomposed" sizes="72x72" href="apple-touch-icon-72x72-precomposed.png">
+    <!-- For non-Retina iPhone, iPod Touch, and Android 2.1+ devices: -->
+    <link rel="apple-touch-icon-precomposed" href="apple-touch-icon-precomposed.png"><!-- 57×57px -->
+    <link rel='mask-icon' href='icon.svg' color='#0000FF'>
+
+    <link rel="icon" type="image/png" href="touch-icon-192x192.png" sizes="192x192">
+    <link rel="icon" type="image/png" href="favicon-32.png" sizes="32x32">
+    <link rel="icon" type="image/png" href="favicon-96.png" sizes="96x96">
+    <link rel="icon" type="image/png" href="favicon-128.png" sizes="128x128">
+    <link rel="icon" type="image/png" href="favicon-195.png" sizes="195x195">
+    <link rel="icon" type="image/png" href="favicon-228.png" sizes="195x195">
+    <link rel="shortcut icon" type="image/png" href="favicon-196.png" sizes="196x196">
+  </head>
 
   <body>
+    <input type="checkbox" id="all"/>
+    <input type="checkbox" id="all1"/>
     <input type="checkbox" id="photo"/>
     <input type="checkbox" id="introduction"/>
     <input type="checkbox" id="contacts"/>
@@ -22,6 +56,7 @@
     <input type="checkbox" id="languages"/>
     <input type="checkbox" id="experience"/>
     <input type="checkbox" id="education"/>
+    <div class="wrapper"></div>
     <div class="desktop">
       <div class="header-container">
         <!-- Photo -->
@@ -120,24 +155,17 @@
                       </p>
                     </div>
                     <div class="list-item">
-                      <img src="./assets/icons/telegram-pixel.svg" class="list-bullet"></img>
-                      <p>
-                        &nbsp;Telegram:&nbsp;
-                        <a href = "https://t.me/the_mAyty" target="_blank" rel="noopener noreferrer">the_mAyty</a>
-                      </p>
-                    </div>
-                    <div class="list-item">
-                      <img src="./assets/icons/facebook-pixel.svg" class="list-bullet"></img>
-                      <p>
-                        &nbsp;Facebook:&nbsp;
-                        <a href = "https://www.facebook.com/pik.paval" target="_blank" rel="noopener noreferrer">pik.paval</a>
-                      </p>
-                    </div>
-                    <div class="list-item">
                       <img src="./assets/icons/linkedin.svg" class="list-bullet"></img>
                       <p>
                         &nbsp;LinkedIn:&nbsp;
                         <a href = "https://www.linkedin.com/in/pavel-pikirenia/" target="_blank" rel="noopener noreferrer">Pavel Pikirenia</a>
+                      </p>
+                    </div>
+                    <div class="list-item">
+                      <img src="./assets/icons/telegram-pixel.svg" class="list-bullet"></img>
+                      <p>
+                        &nbsp;Telegram:&nbsp;
+                        <a href = "https://t.me/the_mAyty" target="_blank" rel="noopener noreferrer">the_mAyty</a>
                       </p>
                     </div>
                     <div class="list-item">
@@ -157,7 +185,7 @@
               <td>
                 <div class="header-window">
                   <div class="header-window">
-                    <img src="./assets/icons/text.svg" class="icon-window"></img>
+                    <img src="./assets/icons/list.svg" class="icon-window"></img>
                     <div class="win-name">Skills</div>
                   </div>
                   <label for="skills">
@@ -229,18 +257,29 @@
                         </p>
                       </div>
                     </div>
+                    <div class="list-item2 collapsible-python">
+                      <img class="vertical-dash"></img>
+                      <div class="list-item-nested">
+                        <img class="inline-dash"></img>
+                        <img src="./assets/icons/python.svg" class="list-bullet"></img>
+                        <p>
+                          &nbsp;Django
+                        </p>
+                      </div>
+                    </div>
                     <div class="list-item">
                       <img class="vertical-dash"></img>
                       <img class="vertical-dash-2 collapsible-python"></img>
                       <img class="vertical-dash-3 collapsible-python"></img>
                       <img class="vertical-dash-4 collapsible-python"></img>
                       <img class="vertical-dash-5 collapsible-python"></img>
+                      <img class="vertical-dash-6 collapsible-python"></img>
                       <div class="list-item-root">
                         <label for="infrastructure">
                           <img class="list-bullet-collapsible-infrastructure"></img>
                         </label>
                         <img class="inline-dash"></img>
-                        <img src="./assets/icons/db.png" class="list-bullet"></img>
+                        <img src="./assets/icons/infrastructure.svg" class="list-bullet"></img>
                         <p>
                           &nbsp;Infrastructure
                         </p>
@@ -250,7 +289,7 @@
                       <img class="vertical-dash"></img>
                       <div class="list-item-nested">
                         <img class="inline-dash"></img>
-                        <img src="./assets/icons/db.png" class="list-bullet"></img>
+                        <img src="./assets/icons/infrastructure.svg" class="list-bullet"></img>
                         <p>
                           &nbsp;PostgreSQL
                         </p>
@@ -260,7 +299,7 @@
                       <img class="vertical-dash"></img>
                       <div class="list-item-nested">
                         <img class="inline-dash"></img>
-                        <img src="./assets/icons/db.png" class="list-bullet"></img>
+                        <img src="./assets/icons/infrastructure.svg" class="list-bullet"></img>
                         <p>
                           &nbsp;Redis
                         </p>
@@ -270,7 +309,7 @@
                       <img class="vertical-dash"></img>
                       <div class="list-item-nested">
                         <img class="inline-dash"></img>
-                        <img src="./assets/icons/db.png" class="list-bullet"></img>
+                        <img src="./assets/icons/infrastructure.svg" class="list-bullet"></img>
                         <p>
                           &nbsp;Kafka
                         </p>
@@ -280,7 +319,7 @@
                       <img class="vertical-dash"></img>
                       <div class="list-item-nested">
                         <img class="inline-dash"></img>
-                        <img src="./assets/icons/db.png" class="list-bullet"></img>
+                        <img src="./assets/icons/infrastructure.svg" class="list-bullet"></img>
                         <p>
                           &nbsp;RabbitMQ
                         </p>
@@ -290,7 +329,7 @@
                       <img class="vertical-dash"></img>
                       <div class="list-item-nested">
                         <img class="inline-dash"></img>
-                        <img src="./assets/icons/db.png" class="list-bullet"></img>
+                        <img src="./assets/icons/infrastructure.svg" class="list-bullet"></img>
                         <p>
                           &nbsp;Nginx
                         </p>
@@ -308,7 +347,7 @@
                           <img class="list-bullet-collapsible-additional-software"></img>
                         </label>
                         <img class="inline-dash"></img>
-                        <img src="./assets/icons/other.png" class="list-bullet"></img>
+                        <img src="./assets/icons/computer.svg" class="list-bullet"></img>
                         <p>
                           &nbsp;Additional Software
                         </p>
@@ -318,7 +357,7 @@
                       <img class="vertical-dash"></img>
                       <div class="list-item-nested">
                         <img class="inline-dash"></img>
-                        <img src="./assets/icons/other.png" class="list-bullet"></img>
+                        <img src="./assets/icons/computer.svg" class="list-bullet"></img>
                         <p>
                           &nbsp;Jenkins
                         </p>
@@ -328,7 +367,7 @@
                       <img class="vertical-dash"></img>
                       <div class="list-item-nested">
                         <img class="inline-dash"></img>
-                        <img src="./assets/icons/other.png" class="list-bullet"></img>
+                        <img src="./assets/icons/computer.svg" class="list-bullet"></img>
                         <p>
                           &nbsp;TeamCity
                         </p>
@@ -338,7 +377,7 @@
                       <img class="vertical-dash"></img>
                       <div class="list-item-nested">
                         <img class="inline-dash"></img>
-                        <img src="./assets/icons/other.png" class="list-bullet"></img>
+                        <img src="./assets/icons/computer.svg" class="list-bullet"></img>
                         <p>
                           &nbsp;Confluence
                         </p>
@@ -348,7 +387,7 @@
                       <img class="vertical-dash"></img>
                       <div class="list-item-nested">
                         <img class="inline-dash"></img>
-                        <img src="./assets/icons/other.png" class="list-bullet"></img>
+                        <img src="./assets/icons/computer.svg" class="list-bullet"></img>
                         <p>
                           &nbsp;Jira
                         </p>
@@ -358,7 +397,7 @@
                       <img class="vertical-dash"></img>
                       <div class="list-item-nested">
                         <img class="inline-dash"></img>
-                        <img src="./assets/icons/other.png" class="list-bullet"></img>
+                        <img src="./assets/icons/computer.svg" class="list-bullet"></img>
                         <p>
                           &nbsp;Stash
                         </p>
@@ -368,7 +407,7 @@
                       <img class="vertical-dash"></img>
                       <div class="list-item-nested">
                         <img class="inline-dash"></img>
-                        <img src="./assets/icons/other.png" class="list-bullet"></img>
+                        <img src="./assets/icons/computer.svg" class="list-bullet"></img>
                         <p>
                           &nbsp;Git
                         </p>
@@ -385,7 +424,7 @@
               <td>
                 <div class="header-window">
                   <div class="header-window">
-                    <img src="./assets/icons/text.svg" class="icon-window"></img>
+                    <img src="./assets/icons/list.svg" class="icon-window"></img>
                     <div class="win-name">Languages</div>
                   </div>
                   <label for="languages">
@@ -412,7 +451,7 @@
                         <img class="list-bullet-collapsible-english"></img>
                       </label>
                       <img class="inline-dash"></img>
-                      <img src="./assets/icons/feather 32vs32.png" class="list-bullet"></img>
+                      <img src="./assets/icons/globe.svg" class="list-bullet"></img>
                       <p>
                         &nbsp;English
                       </p>
@@ -421,7 +460,7 @@
                       <img class="vertical-dash"></img>
                       <div class="list-item-nested">
                         <img class="inline-dash"></img>
-                        <img src="./assets/icons/lang.png" class="list-bullet"></img>
+                        <img src="./assets/icons/message.svg" class="list-bullet"></img>
                         <p>
                           &nbsp;C1
                         </p>
@@ -435,7 +474,7 @@
                           <img class="list-bullet-collapsible-belarusian"></img>
                         </label>
                         <img class="inline-dash"></img>
-                        <img src="./assets/icons/lang.png" class="list-bullet"></img>
+                        <img src="./assets/icons/globe.svg" class="list-bullet"></img>
                         <p>
                           &nbsp;Belarusian
                         </p>
@@ -445,7 +484,7 @@
                       <img class="vertical-dash"></img>
                       <div class="list-item-nested">
                         <img class="inline-dash"></img>
-                        <img src="./assets/icons/lang.png" class="list-bullet"></img>
+                        <img src="./assets/icons/message.svg" class="list-bullet"></img>
                         <p>
                           &nbsp;Native
                         </p>
@@ -459,7 +498,7 @@
                           <img class="list-bullet-collapsible-russian"></img>
                         </label>
                         <img class="inline-dash"></img>
-                        <img src="./assets/icons/lang.png" class="list-bullet"></img>
+                        <img src="./assets/icons/globe.svg" class="list-bullet"></img>
                         <p>
                           &nbsp;Russian
                         </p>
@@ -469,7 +508,7 @@
                       <img class="vertical-dash"></img>
                       <div class="list-item-nested">
                         <img class="inline-dash"></img>
-                        <img src="./assets/icons/lang.png" class="list-bullet"></img>
+                        <img src="./assets/icons/message.svg" class="list-bullet"></img>
                         <p>
                           &nbsp;Native
                         </p>
@@ -481,6 +520,7 @@
             </tr>
           </table>
         </div>
+        <!-- Main Part -->
         <div class="big-part-container">
           <!-- Experience -->
           <table class="window-minh closable-experience">  
@@ -488,7 +528,7 @@
               <td>
                 <div class="header-window">
                   <div class="header-window">
-                    <img src="./assets/icons/text.svg" class="icon-window"></img>
+                    <img src="./assets/icons/list.svg" class="icon-window"></img>
                     <div class="win-name">Experience</div>
                   </div>
                   <label for="experience">
@@ -524,7 +564,7 @@
                       <img class="vertical-dash"></img>
                       <div class="list-item-nested">
                         <img class="inline-dash"></img>
-                        <img src="./assets/icons/calendar.svg" class="list-bullet"></img>
+                        <img src="./assets/icons/calendar.png" class="list-bullet"></img>
                         <p>
                           &nbsp;Feb 2021 - now
                         </p>
@@ -534,7 +574,7 @@
                       <img class="vertical-dash"></img>
                       <div class="list-item-nested">
                         <img class="inline-dash"></img>
-                        <img src="./assets/icons/computer.svg" class="list-bullet"></img>
+                        <img src="./assets/icons/education.svg" class="list-bullet"></img>
                         <p>
                           &nbsp;Backend Web Developer
                         </p>
@@ -569,7 +609,7 @@
                       <img class="vertical-dash"></img>
                       <div class="list-item-nested">
                         <img class="inline-dash"></img>
-                        <img src="./assets/icons/db.png" class="list-bullet"></img>
+                        <img src="./assets/icons/infrastructure.svg" class="list-bullet"></img>
                         <p>
                           &nbsp;SQL (PostgreSQL)
                         </p>
@@ -579,7 +619,7 @@
                       <img class="vertical-dash"></img>
                       <div class="list-item-nested">
                         <img class="inline-dash"></img>
-                        <img src="./assets/icons/db.png" class="list-bullet"></img>
+                        <img src="./assets/icons/infrastructure.svg" class="list-bullet"></img>
                         <p>
                           &nbsp;Redis
                         </p>
@@ -589,7 +629,7 @@
                       <img class="vertical-dash"></img>
                       <div class="list-item-nested">
                         <img class="inline-dash"></img>
-                        <img src="./assets/icons/db.png" class="list-bullet"></img>
+                        <img src="./assets/icons/infrastructure.svg" class="list-bullet"></img>
                         <p>
                           &nbsp;Kafka
                         </p>
@@ -599,7 +639,7 @@
                       <img class="vertical-dash"></img>
                       <div class="list-item-nested">
                         <img class="inline-dash"></img>
-                        <img src="./assets/icons/db.png" class="list-bullet"></img>
+                        <img src="./assets/icons/infrastructure.svg" class="list-bullet"></img>
                         <p>
                           &nbsp;RabbitMQ
                         </p>
@@ -609,7 +649,7 @@
                       <img class="vertical-dash"></img>
                       <div class="list-item-nested">
                         <img class="inline-dash"></img>
-                        <img src="./assets/icons/db.png" class="list-bullet"></img>
+                        <img src="./assets/icons/infrastructure.svg" class="list-bullet"></img>
                         <p>
                           &nbsp;Nginx
                         </p>
@@ -629,7 +669,7 @@
                         </label>
                         <div class="list-item-nested-root">
                           <img class="inline-dash"></img>
-                          <img src="./assets/icons/resp.png" class="list-bullet"></img>
+                          <img src="./assets/icons/responsibilities.svg" class="list-bullet"></img>
                           <p>
                             &nbsp;Responsibilities
                           </p>
@@ -640,9 +680,9 @@
                       <img class="vertical-dash"></img>
                       <div class="list-item-nested">
                         <img class="inline-dash"></img>
-                        <img src="./assets/icons/resp.png" class="list-bullet"></img>
+                        <img src="./assets/icons/responsibilities.svg" class="list-bullet"></img>
                         <p>
-                          &nbsp;Working on backend microservices
+                          &nbsp;Working on backend of microservices
                         </p>
                       </div>
                     </div>
@@ -650,9 +690,9 @@
                       <img class="vertical-dash"></img>
                       <div class="list-item-nested">
                         <img class="inline-dash"></img>
-                        <img src="./assets/icons/resp.png" class="list-bullet"></img>
+                        <img src="./assets/icons/responsibilities.svg" class="list-bullet"></img>
                         <p>
-                          &nbsp;Investigating production incidents
+                          &nbsp;Investigating and fixing production incidents
                         </p>
                       </div>
                     </div>
@@ -660,7 +700,7 @@
                       <img class="vertical-dash"></img>
                       <div class="list-item-nested">
                         <img class="inline-dash"></img>
-                        <img src="./assets/icons/resp.png" class="list-bullet"></img>
+                        <img src="./assets/icons/responsibilities.svg" class="list-bullet"></img>
                         <p>
                           &nbsp;Developing solutions for new features
                         </p>
@@ -670,9 +710,19 @@
                       <img class="vertical-dash"></img>
                       <div class="list-item-nested">
                         <img class="inline-dash"></img>
-                        <img src="./assets/icons/resp.png" class="list-bullet"></img>
+                        <img src="./assets/icons/responsibilities.svg" class="list-bullet"></img>
                         <p>
                           &nbsp;Conducting code review
+                        </p>
+                      </div>
+                    </div>
+                    <div class="list-item3 collapsible-wargaming collapsible-wargaming-responsibilities">
+                      <img class="vertical-dash"></img>
+                      <div class="list-item-nested">
+                        <img class="inline-dash"></img>
+                        <img src="./assets/icons/responsibilities.svg" class="list-bullet"></img>
+                        <p>
+                          &nbsp;Giving internal lectures
                         </p>
                       </div>
                     </div>
@@ -687,7 +737,7 @@
               <td>
                 <div class="header-window">
                   <div class="header-window">
-                    <img src="./assets/icons/text.svg" class="icon-window"></img>
+                    <img src="./assets/icons/list.svg" class="icon-window"></img>
                     <div class="win-name">Education</div>
                   </div>
                   <label for="education">
@@ -722,7 +772,7 @@
                       <img class="vertical-dash"></img>
                       <div class="list-item-nested">
                         <img class="inline-dash"></img>
-                        <img src="./assets/icons/calendar.svg" class="list-bullet"></img>
+                        <img src="./assets/icons/calendar.png" class="list-bullet"></img>
                         <p>
                           &nbsp;Sep 2018 - Jun 2022
                         </p>
@@ -732,7 +782,7 @@
                       <img class="vertical-dash"></img>
                       <div class="list-item-nested">
                         <img class="inline-dash"></img>
-                        <img src="./assets/icons/computer.svg" class="list-bullet"></img>
+                        <img src="./assets/icons/education.svg" class="list-bullet"></img>
                         <p>
                           &nbsp;System Engineer
                         </p>
@@ -757,7 +807,7 @@
                       <img class="vertical-dash"></img>
                       <div class="list-item-nested">
                         <img class="inline-dash"></img>
-                        <img src="./assets/icons/calendar.svg" class="list-bullet"></img>
+                        <img src="./assets/icons/calendar.png" class="list-bullet"></img>
                         <p>
                           &nbsp;May 2021
                         </p>
@@ -771,13 +821,19 @@
         </div>
       </div>
     </div>
-    <div class="footer">
+    <div class="hidden-print footer">
       <div class="doc-bar">
         <div class="doc-app-container">
-          <div class="start-app">
-            <img src="./assets/icons/start.svg" class="windows-icon"></img>
-            <div class="doc-name">Start</div>
-          </div>
+          <label for="all">
+            <div class="start-app">
+              <img src="./assets/icons/power.svg" class="app-icon"></img>
+            </div>
+          </label>
+          <label for="all1">
+            <div class="start-app">
+              <img src="./assets/icons/power.svg" class="app-icon"></img>
+            </div>
+          </label>
           <label for="photo">
             <div class="doc-app">
               <img src="./assets/icons/image.svg" class="app-icon"></img>
@@ -792,13 +848,13 @@
           </label>
           <label for="skills">
             <div class="doc-app">
-              <img src="./assets/icons/text.svg" class="app-icon"></img>
+              <img src="./assets/icons/list.svg" class="app-icon"></img>
               <div class="doc-name">Skills</div>
             </div>
           </label>
           <label for="languages">
             <div class="doc-app">
-              <img src="./assets/icons/text.svg" class="app-icon"></img>
+              <img src="./assets/icons/list.svg" class="app-icon"></img>
               <div class="doc-name">Languages</div>
             </div>
           </label>
@@ -810,13 +866,13 @@
           </label>
           <label for="experience">
             <div class="doc-app">
-              <img src="./assets/icons/text.svg" class="app-icon"></img>
+              <img src="./assets/icons/list.svg" class="app-icon"></img>
               <div class="doc-name">Experience</div>
             </div>
           </label>
           <label for="education">
             <div class="doc-app">
-              <img src="./assets/icons/text.svg" class="app-icon"></img>
+              <img src="./assets/icons/list.svg" class="app-icon"></img>
               <div class="doc-name">Education</div>
             </div>
           </label>

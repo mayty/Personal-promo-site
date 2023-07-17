@@ -1,6 +1,6 @@
 <svg
-    xmlns="http://www.w3.org/2000/svg" viewBox="0 0 8 8"  preserveAspectRatio="none"
+    xmlns="http://www.w3.org/2000/svg" viewBox="0 0 8 8"  preserveAspectRatio="meet"
 >
-<path d="M 1 0 h 6 v 1 h 1 v 6 h -1 v 1 h -6 v -1 h -1 v -6 h 1" style="fill:#0062E0;"/>
-<path d="M 3 8 v -6 h 2 v 1 h -1 v 1 h 1 v 1 h -1 v 3" style="fill:#FFFFFF;"/>
+<path d="M1 0h6v1h1v6h-1v1h-6v-1h-1v-6h1" style="fill:#0062E0;"/>
+<path d="M3 8v-6h2v1h-1v1h1v1h-1v3" style="fill:#FFFFFF;"/>
 </svg>

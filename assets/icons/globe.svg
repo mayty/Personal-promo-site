@@ -1,81 +1,9 @@
 <svg
-    xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16"  preserveAspectRatio="none"
+    xmlns="http://www.w3.org/2000/svg" viewBox="0 0 19 19"  preserveAspectRatio="meet"
 >
-<path d="M 4 0 h 8 v 1 h 1 v 1 h 1 v 1 h 1 v 1 h 1 v 8 h -1 v 1 h -1 v 1 h -1 v 1 h -1 v 1 h -8 v -1 h -1 v -1 h -1 v -1 h -1 v -1 h -1 v -8 h 1 v -1 h 1 v -1 h 1 v -1 h 1" style="fill:#000000;"/>
-<path d="M 1 5 h 1 v 1 h 1 v 2 h 2 v 1 h 1 v 1 h 1 v 2 h 1 v 1 h 1 v 2 h -4 v -1 h -2v -1 h -1 v -2 h -1" style="fill:#0000ff;"/>
-<path d="M 6 7 h 3 v 1 h 1 v -2 h -1 v -1 h 1 v -4 h 1 v 1 h 1 v 2 h 1 v 3 h 1 v 1 h 1 v 3 h -1 v 2 h -1 v 1 h -2 v -1 h 1 v -1 h 1 v -2 h -3v -1 h -2 v -1 h -2" style="fill:#0000ff;"/>
-<rect x="7" y="1" height="1" width="1" style="fill:#0000FF"/>
-
-<rect x="0" y="6" height="4" width="1" style="fill:#00007F"/>
-<rect x="6" y="0" height="1" width="1" style="fill:#00007F"/>
-<rect x="8" y="0" height="1" width="2" style="fill:#00007F"/>
-<rect x="6" y="15" height="1" width="4" style="fill:#00007F"/>
-<rect x="15" y="9" height="1" width="1" style="fill:#00007F"/>
-
-<path d="M 3 2 h 2 v -1 h 1 v 2 h 2 v -1 h 1 v 4 h -2 v -1 h -1 v 1 h -1 v 2 h -1 v -2 h -1" style="fill:#00ff00"/>
-<path d="M 7 10 h 5 v 2 h -1 v 1 h -1 v 1 h -1 v -1 h -1 v -1 h -1" style="fill:#00ff00"/>
-<rect x="12" y="2" height="1" width="1" style="fill:#00FF00;"/>
-<rect x="13" y="3" height="1" width="1" style="fill:#00FF00;"/>
-<rect x="14" y="5" height="2" width="1" style="fill:#00FF00;"/>
-
-<path d="M 2 4 h 1 v 2 h -1 " style="fill:#007F7F"/>
-<path d="M 5 6 h 1 v 2 h 1 v 2 h -1 v -1 h -1" style="fill:#007F7F"/>
-<rect x="8" y="1" height="1" width="1" style="fill:#007F7F;"/>
-<rect x="9" y="3" height="1" width="1" style="fill:#007F7F;"/>
-<rect x="12" y="3" height="1" width="1" style="fill:#007F7F;"/>
-<rect x="13" y="6" height="1" width="1" style="fill:#007F7F;"/>
-<rect x="9" y="9" height="1" width="1" style="fill:#007F7F;"/>
-<rect x="12" y="11" height="1" width="1" style="fill:#007F7F;"/>
-<rect x="11" y="12" height="1" width="1" style="fill:#007F7F;"/>
-<rect x="10" y="14" height="1" width="1" style="fill:#007F7F;"/>
-
-<path d="M 6 1 h 1 v 1 h 1 v 1 h -2" style="fill:#003FBF"/>
-<rect x="9" y="4" height="1" width="1" style="fill:#003FBF;"/>
-<rect x="9" y="6" height="2" width="1" style="fill:#003FBF;"/>
-<rect x="6" y="6" height="1" width="2" style="fill:#003FBF;"/>
-<rect x="3" y="7" height="1" width="1" style="fill:#003FBF;"/>
-<rect x="7" y="8" height="1" width="1" style="fill:#003FBF;"/>
-<rect x="8" y="9" height="1" width="1" style="fill:#003FBF;"/>
-<rect x="13" y="4" height="2" width="1" style="fill:#003FBF;"/>
-<rect x="12" y="10" height="1" width="1" style="fill:#003FBF;"/>
-
-<rect x="12" y="14" height="1" width="1" style="fill:#00003F;"/>
-<rect x="13" y="13" height="1" width="1" style="fill:#00003F;"/>
-<rect x="14" y="12" height="1" width="1" style="fill:#00003F;"/>
-<rect x="3" y="14" height="1" width="1" style="fill:#00003F;"/>
-<rect x="2" y="13" height="1" width="1" style="fill:#00003F;"/>
-<rect x="1" y="12" height="1" width="1" style="fill:#00003F;"/>
-<rect x="1" y="3" height="1" width="1" style="fill:#00003F;"/>
-
-<rect x="1" y="4" height="1" width="1" style="fill:#0000BF;"/>
-<rect x="1" y="11" height="1" width="1" style="fill:#0000BF;"/>
-<rect x="4" y="14" height="1" width="1" style="fill:#0000BF;"/>
-<rect x="11" y="14" height="1" width="1" style="fill:#0000BF;"/>
-<rect x="14" y="11" height="1" width="1" style="fill:#0000BF;"/>
-<rect x="11" y="1" height="1" width="1" style="fill:#0000BF;"/>
-
-<rect x="14" y="4" height="1" width="1" style="fill:#003F7F;"/>
-
-<rect x="2" y="2" height="1" width="1" style="fill:#003F00;"/>
-<rect x="3" y="1" height="1" width="1" style="fill:#003F00;"/>
-<rect x="12" y="1" height="1" width="1" style="fill:#003F00;"/>
-<rect x="13" y="2" height="1" width="1" style="fill:#003F00;"/>
-<rect x="14" y="3" height="1" width="1" style="fill:#003F00;"/>
-
-<rect x="15" y="6" height="3" width="1" style="fill:#007F00;"/>
-
-<rect x="7" y="0" height="1" width="1" style="fill:#003F3F;"/>
-
-<rect x="4" y="1" height="1" width="1" style="fill:#00BF00;"/>
-
-<rect x="2" y="3" height="1" width="1" style="fill:#00BF3F;"/>
-<rect x="3" y="6" height="1" width="1" style="fill:#00BF3F;"/>
-<rect x="8" y="6" height="1" width="1" style="fill:#00BF3F;"/>
-<rect x="6" y="5" height="1" width="1" style="fill:#00BF3F;"/>
-<rect x="9" y="1" height="2" width="1" style="fill:#00BF3F;"/>
-<rect x="14" y="7" height="1" width="1" style="fill:#00BF3F;"/>
-<rect x="7" y="9" height="1" width="1" style="fill:#00BF3F;"/>
-<rect x="10" y="13" height="1" width="1" style="fill:#00BF3F;"/>
-<rect x="9" y="14" height="1" width="1" style="fill:#00BF3F;"/>
-
+<path d="M0 6h1v-2h1v-1h1v-1h1v-1h2v-1h7v1h2v1h1v1h1v1h1v2h1v7h-1v2h-1v1h-1v1h-1v1h-2v1h-7v-1h-2v-1h-1v-1h-1v-1h-1v-2h-1" style="fill:#000000;"/>
+<path d="M1 6h1v-2h2v-1h1v-1h1v-1h7v1h1v1h1v1h2v2h1v7h-1v2h-2v1h-1v1h-1v1h-7v-1h-1v-1h-1v-1h-2v-2h-1" style="fill:#0822ff;"/>
+<path d="M3 12h2v-1h4v1h1v3h-1v2h1v1h-3v-1h-1v-1h-1v-1h-1v-1h-1" style="fill:#75ea00;"/>
+<path d="M15 13h2v2h-2" style="fill:#75ea00;"/>
+<path d="M7 7h2v-1h1v-1h7v1h1v5h-2v-1h-4v-1h-2v1h1v1h-2v-2h-2" style="fill:#75ea00;"/>
 </svg>

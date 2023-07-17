@@ -83,3 +83,17 @@ table[class~=window] {
 .win-name {
     margin-top: calc(var(--header-height) * 0.2);
 }
+
+@media print {
+    .header-window {
+        color: black;
+    }
+
+    .outer-cross {
+        display: none;
+    }
+
+    .header-window {
+        background-color: transparent;
+    }
+}

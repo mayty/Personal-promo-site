@@ -8,6 +8,7 @@
 .doc-bar {
     --window-height: 1.2em;
     --app-width: 150px;
+    --icon-size: calc(var(--header-height) - (var(--border-width) * 2));
     display: flex;
     flex-direction: row;
     width: 100%;
@@ -31,6 +32,7 @@
 }
 
 .start-app {
+    --closed-border: url(./../assets/borders/border-dock-closed.png);
     gap: var(--border-width);
     margin-right: calc(2 * var(--border-width));
     align-items: center;
@@ -43,9 +45,10 @@
     border-image-source: url(./../assets/borders/border-dock.png);
     border-image-slice: 2 fill;
     z-index: 2;
+    cursor: pointer;
 }
 
-div[class=doc-app-container] > label {
+div[class=doc-app-container] > label:not([for^=all]) {
     width: var(--app-width);
     display: inline-flex;
 }
@@ -77,19 +80,7 @@ div[class=doc-app-container] > label:last-child {
     user-select: none;
 }
 
-.windows-icon {
-    --icon-size: calc(var(--header-height) - (var(--border-width) * 2));
-    --windows-width: calc(var(--icon-size) * 16 / 14);
-    height: var(--icon-size);
-    width: var(--windows-width);
-    z-index: 2;
-    border-width: var(--border-width);
-    border-style: solid;
-    border-color: transparent;
-}
-
 .app-icon {
-    --icon-size: calc(var(--header-height) - (var(--border-width) * 2));
     height: var(--icon-size);
     width: var(--icon-size);
     z-index: 2;
