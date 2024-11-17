@@ -9,7 +9,7 @@
 
 html {
     touch-action: manipulation;
-    --min-width: 401px;
+    --min-footer-width: 296px;
     --max-width: 1000px;
     image-rendering: pixelated;
 }
@@ -17,8 +17,9 @@ html {
 * {
     margin: 0;
     padding: 0;
-    --font-size: 1em;
-    --inline-picture-size: 0.8em;
+    --initial-font-size: 1em;
+    --font-size: var(--initial-font-size);
+    --inline-picture-size: calc(var(--font-size) * 0.8);
     /* outline: red dashed 1px; */
 }
 
@@ -29,16 +30,16 @@ body {
     --initial-target-padding: 10px;
     --target-padding: var(--initial-target-padding);
     --header-height: calc(var(--font-size) * 1.2);
-    background-color: #57A8A8;
+    background-color: #008080;
     font-family: 'W95FA';
 }
 
 .desktop {
-    padding: var(--target-padding);
+    padding: max(var(--target-padding), 2px);
     max-width: var(--max-width);
     min-width: max-content;
     margin: auto;
-    margin-bottom: calc(var(--header-height) + var(--initial-target-padding));
+    margin-bottom: calc(var(--initial-font-size) * 1.2 + var(--initial-target-padding));
     display: flex;
     flex-direction: column;
 }
@@ -46,6 +47,12 @@ body {
 @media (max-width: 431px) {
     body {
         --target-padding: max(calc(9px - (431px - 100vw) / 3.75), 1px);
+    }
+}
+
+@media (max-width: 350px) {
+    * {
+        --font-size: max(calc(var(--initial-font-size) - (350px - 100vw) * 0.13), 0.75em);
     }
 }
 

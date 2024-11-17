@@ -8,10 +8,12 @@
 
 .list {
     --padding: max(var(--target-padding), 4px);
+    --padding-right: max(var(--target-padding), 2px);
     display: flex;
     flex-direction: column;
     gap: calc(var(--inline-picture-size) * 3 / 7);
     padding: var(--padding);
+    padding-right: var(--padding-right);
     --default-long-dash-margin-top: calc(var(--long-dash-length) * (-1.5 / 9));
 }
 

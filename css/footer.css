@@ -1,7 +1,7 @@
 .footer {
     position: fixed;
     bottom: 0;
-    width: max(100%, var(--min-width));
+    width: max(100%, var(--min-footer-width));
     z-index: 2;
 }
 
@@ -160,6 +160,33 @@ div[class=doc-app-container] > label:last-child {
         display: none;
     }
     .doc-app > div[class|=doc-name]:nth-of-type(4) {
+        display: block;
+        margin-top: calc(var(--header-height) * 0.2);
+        margin-right: var(--border-width);
+    }
+
+    div[class=doc-app-container] > label[for=contacts] {
+        display: none;
+    }
+}
+
+@media (max-width: 370px) {
+    .doc-name {
+        display: none;
+    }
+    .doc-app > div[class|=doc-name]:nth-of-type(1) {
+        display: none;
+    }
+    .doc-app > div[class|=doc-name]:nth-of-type(2) {
+        display: none;
+    }
+    .doc-app > div[class|=doc-name]:nth-of-type(3) {
+        display: none;
+    }
+    .doc-app > div[class|=doc-name]:nth-of-type(4) {
+        display: none;
+    }
+    .doc-app > div[class|=doc-name]:nth-of-type(5) {
         display: block;
         margin-top: calc(var(--header-height) * 0.2);
         margin-right: var(--border-width);

@@ -7,11 +7,12 @@
 
 .profile-photo {
     height: var(--photo-height);
+    width: calc(var(--photo-height) * 180 / 239);
     display: flex;
 }
 
 .introduction-centered {
-    --padding: max(var(--target-padding), 4px);
+    --padding: max(var(--target-padding), 3px);
     display: flex;
     flex-direction: column;
     width: min-content;
@@ -47,8 +48,25 @@ div[class^="contacts-mobile"] > *:not(img) {
     margin-top: calc(var(--inline-picture-size) * 0.1);
 }
 
+h1 {
+    font-size: calc(var(--font-size) * 2);
+}
+
 @media (min-width: 730px) {
     div[class^="contacts-mobile"] {
+        display: none;
+    }
+}
+
+
+@media (max-width: 405px) {
+    .header-container {
+        --photo-height: max(calc(239px - (405px - 100vw) * 1.5), 170px);
+    }
+}
+
+@media (max-width: 366px) {
+    .contacts-mobile-prefix {
         display: none;
     }
 }
