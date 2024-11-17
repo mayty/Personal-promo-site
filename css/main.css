@@ -1,17 +1,17 @@
 .main-container {
     display: flex;
-    flex-direction: row;
+    flex-direction: column-reverse;
     width: 100%;
-    --inline-picture-size: 0.8em;
     --long-dash-length: calc(var(--inline-picture-size) * 9 / 7);
     --long-dash-height: calc(var(--inline-picture-size) * 3 / 7);
 }
 
 .list {
+    --padding: max(var(--target-padding), 4px);
     display: flex;
     flex-direction: column;
     gap: calc(var(--inline-picture-size) * 3 / 7);
-    padding: 1em;
+    padding: var(--padding);
     --default-long-dash-margin-top: calc(var(--long-dash-length) * (-1.5 / 9));
 }
 
@@ -112,7 +112,6 @@ img[class|="list-bullet-collapsible"] {
 .experience {
     display: flex;
     flex-direction: column;
-    padding: 1em;
 }
 
 .main-data {
@@ -155,4 +154,51 @@ div[class^="list-item"] > *:not(img) {
     display: flex;
     flex-direction: column;
     width: 100%;
+}
+
+.mobile-row {
+    display: flex;
+    flex-direction: column;
+}
+
+.bsuir-text-mobile {
+    display: block;
+}
+
+.bsuir-text-desktop {
+    display: none;
+}
+
+.closable-contacts {
+    display: none;
+}
+
+@media (min-width: 730px) {
+    .side-data {
+        display: flex;
+        flex-direction: column;
+        width: min-content;
+    }
+    
+    .mobile-row {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .main-container {
+        flex-direction: row;
+    }
+
+    .closable-contacts {
+        display: table;
+    }
+}
+
+@media (min-width: 510px) {
+    .bsuir-text-mobile {
+        display: none;
+    }
+    .bsuir-text-desktop {
+        display: block;
+    }
 }

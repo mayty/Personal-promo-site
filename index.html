@@ -3,7 +3,7 @@
 <html lang="en">
    <head>
     <meta charset = "utf-8">
-    <meta name="viewport" content="width=device-width">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no" />
     <meta name="description" content="Backend Web Developer at Wargaming.">
     <title>Pavel Pikirenia</title>
     <link rel="stylesheet" href="/css/style.css">
@@ -45,6 +45,8 @@
     <link rel="icon" type="image/png" href="favicon-195.png" sizes="195x195">
     <link rel="icon" type="image/png" href="favicon-228.png" sizes="228x228">
     <link rel="shortcut icon" type="image/png" href="favicon-196.png" sizes="196x196">
+
+    <meta name = "theme-color" content = "#57A8A8">
   </head>
 
   <body>
@@ -113,7 +115,36 @@
               <div class="window-text text-window-height">
                 <div class="introduction-centered">
                   <h1>Pavel&nbsp;Pikirenia</h1>
-                  <p>Backend&nbsp;Web&nbsp;Developer</p>
+                  <div class="introduction-text">
+                    <p>Backend&nbsp;Web&nbsp;Developer</p>
+                    <div class="contacts-mobile">
+                        <img src="./assets/icons/gmail-pixel.svg" class="list-bullet"></img>
+                        <p>
+                          &nbsp;Email:&nbsp;
+                          <a href = "mailto:pik.paval@gmail.com" target="_blank" rel="noopener noreferrer">pik.paval@gmail.com</a>
+                        </p>
+                    </div>
+                    <div class="contacts-mobile">
+                      <img src="./assets/icons/linkedin.svg" class="list-bullet"></img>
+                      <p>
+                        &nbsp;LinkedIn:&nbsp;
+                        <a href = "https://www.linkedin.com/in/pavel-pikirenia/" target="_blank" rel="noopener noreferrer">Pavel Pikirenia</a>
+                      </p>
+                    </div>
+                    <div class="contacts-mobile">
+                      <img src="./assets/icons/telegram-pixel.svg" class="list-bullet"></img>
+                      <p>
+                        &nbsp;Telegram:&nbsp;
+                        <a href = "https://t.me/the_mAyty" target="_blank" rel="noopener noreferrer">the_mAyty</a>
+                      </p>
+                    </div>
+                    <div class="contacts-mobile">
+                      <img src="./assets/icons/globe.svg" class="list-bullet"></img>
+                      <p>
+                        &nbsp;Vilnius, Lithuania
+                      </p>
+                    </div>
+                  </div>
                 </div>
               </div>
             </td>
@@ -180,346 +211,348 @@
               </td>
             </tr>
           </table>
-          <!-- Skills -->
-          <table class="window-minh closable-skills">
-            <tr>
-              <td>
-                <div class="header-window">
+          <div class="mobile-row">
+            <!-- Skills -->
+            <table class="window-minh closable-skills">
+              <tr>
+                <td>
                   <div class="header-window">
-                    <img src="./assets/icons/list.svg" class="icon-window"></img>
-                    <div class="win-name">Skills</div>
+                    <div class="header-window">
+                      <img src="./assets/icons/list.svg" class="icon-window"></img>
+                      <div class="win-name">Skills</div>
+                    </div>
+                    <label for="skills">
+                      <div class="outer-cross">
+                        <div class="inner-cross">
+                          <div class="cross-base">
+                            <img class="cross"></img>
+                          </div>
+                        </div>
+                      </div>
+                    </label>
                   </div>
-                  <label for="skills">
-                    <div class="outer-cross">
-                      <div class="inner-cross">
-                        <div class="cross-base">
-                          <img class="cross"></img>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <div class="window-text">
+                    <div class="list">
+                      <input type="checkbox" id="python"/>
+                      <input type="checkbox" id="infrastructure"/>
+                      <input type="checkbox" id="additional-software"/>
+                      <div class="list-item">
+                        <label for="python">
+                          <img class="list-bullet-collapsible-python"></img>
+                        </label>
+                        <img class="inline-dash"></img>
+                        <img src="./assets/icons/python.svg" class="list-bullet"></img>
+                        <p>
+                          &nbsp;Python
+                        </p>
+                      </div>
+                      <div class="list-item2 collapsible-python">
+                        <img class="vertical-dash"></img>
+                        <div class="list-item-nested">
+                          <img class="inline-dash"></img>
+                          <img src="./assets/icons/python.svg" class="list-bullet"></img>
+                          <p>
+                            &nbsp;SQLAlchemy
+                          </p>
+                        </div>
+                      </div>
+                      <div class="list-item2 collapsible-python">
+                        <img class="vertical-dash"></img>
+                        <div class="list-item-nested">
+                          <img class="inline-dash"></img>
+                          <img src="./assets/icons/python.svg" class="list-bullet"></img>
+                          <p>
+                            &nbsp;Falcon
+                          </p>
+                        </div>
+                      </div>
+                      <div class="list-item2 collapsible-python">
+                        <img class="vertical-dash"></img>
+                        <div class="list-item-nested">
+                          <img class="inline-dash"></img>
+                          <img src="./assets/icons/python.svg" class="list-bullet"></img>
+                          <p>
+                            &nbsp;Celery
+                          </p>
+                        </div>
+                      </div>
+                      <div class="list-item2 collapsible-python">
+                        <img class="vertical-dash"></img>
+                        <div class="list-item-nested">
+                          <img class="inline-dash"></img>
+                          <img src="./assets/icons/python.svg" class="list-bullet"></img>
+                          <p>
+                            &nbsp;tox
+                          </p>
+                        </div>
+                      </div>
+                      <div class="list-item2 collapsible-python">
+                        <img class="vertical-dash"></img>
+                        <div class="list-item-nested">
+                          <img class="inline-dash"></img>
+                          <img src="./assets/icons/python.svg" class="list-bullet"></img>
+                          <p>
+                            &nbsp;Django
+                          </p>
+                        </div>
+                      </div>
+                      <div class="list-item">
+                        <img class="vertical-dash"></img>
+                        <img class="vertical-dash-2 collapsible-python"></img>
+                        <img class="vertical-dash-3 collapsible-python"></img>
+                        <img class="vertical-dash-4 collapsible-python"></img>
+                        <img class="vertical-dash-5 collapsible-python"></img>
+                        <img class="vertical-dash-6 collapsible-python"></img>
+                        <div class="list-item-root">
+                          <label for="infrastructure">
+                            <img class="list-bullet-collapsible-infrastructure"></img>
+                          </label>
+                          <img class="inline-dash"></img>
+                          <img src="./assets/icons/infrastructure.svg" class="list-bullet"></img>
+                          <p>
+                            &nbsp;Infrastructure
+                          </p>
+                        </div>
+                      </div>
+                      <div class="list-item2 collapsible-infrastructure">
+                        <img class="vertical-dash"></img>
+                        <div class="list-item-nested">
+                          <img class="inline-dash"></img>
+                          <img src="./assets/icons/infrastructure.svg" class="list-bullet"></img>
+                          <p>
+                            &nbsp;PostgreSQL
+                          </p>
+                        </div>
+                      </div>
+                      <div class="list-item2 collapsible-infrastructure">
+                        <img class="vertical-dash"></img>
+                        <div class="list-item-nested">
+                          <img class="inline-dash"></img>
+                          <img src="./assets/icons/infrastructure.svg" class="list-bullet"></img>
+                          <p>
+                            &nbsp;Redis
+                          </p>
+                        </div>
+                      </div>
+                      <div class="list-item2 collapsible-infrastructure">
+                        <img class="vertical-dash"></img>
+                        <div class="list-item-nested">
+                          <img class="inline-dash"></img>
+                          <img src="./assets/icons/infrastructure.svg" class="list-bullet"></img>
+                          <p>
+                            &nbsp;Kafka
+                          </p>
+                        </div>
+                      </div>
+                      <div class="list-item2 collapsible-infrastructure">
+                        <img class="vertical-dash"></img>
+                        <div class="list-item-nested">
+                          <img class="inline-dash"></img>
+                          <img src="./assets/icons/infrastructure.svg" class="list-bullet"></img>
+                          <p>
+                            &nbsp;RabbitMQ
+                          </p>
+                        </div>
+                      </div>
+                      <div class="list-item2 collapsible-infrastructure">
+                        <img class="vertical-dash"></img>
+                        <div class="list-item-nested">
+                          <img class="inline-dash"></img>
+                          <img src="./assets/icons/infrastructure.svg" class="list-bullet"></img>
+                          <p>
+                            &nbsp;Nginx
+                          </p>
+                        </div>
+                      </div>
+                      <div class="list-item">
+                        <img class="vertical-dash"></img>
+                        <img class="vertical-dash-2 collapsible-infrastructure"></img>
+                        <img class="vertical-dash-3 collapsible-infrastructure"></img>
+                        <img class="vertical-dash-4 collapsible-infrastructure"></img>
+                        <img class="vertical-dash-5 collapsible-infrastructure"></img>
+                        <img class="vertical-dash-6 collapsible-infrastructure"></img>
+                        <div class="list-item-root">
+                          <label for="additional-software">
+                            <img class="list-bullet-collapsible-additional-software"></img>
+                          </label>
+                          <img class="inline-dash"></img>
+                          <img src="./assets/icons/computer.svg" class="list-bullet"></img>
+                          <p>
+                            &nbsp;Additional Software
+                          </p>
+                        </div>
+                      </div>
+                      <div class="list-item2 collapsible-additional-software">
+                        <img class="vertical-dash"></img>
+                        <div class="list-item-nested">
+                          <img class="inline-dash"></img>
+                          <img src="./assets/icons/computer.svg" class="list-bullet"></img>
+                          <p>
+                            &nbsp;Jenkins
+                          </p>
+                        </div>
+                      </div>
+                      <div class="list-item2 collapsible-additional-software">
+                        <img class="vertical-dash"></img>
+                        <div class="list-item-nested">
+                          <img class="inline-dash"></img>
+                          <img src="./assets/icons/computer.svg" class="list-bullet"></img>
+                          <p>
+                            &nbsp;TeamCity
+                          </p>
+                        </div>
+                      </div>
+                      <div class="list-item2 collapsible-additional-software">
+                        <img class="vertical-dash"></img>
+                        <div class="list-item-nested">
+                          <img class="inline-dash"></img>
+                          <img src="./assets/icons/computer.svg" class="list-bullet"></img>
+                          <p>
+                            &nbsp;Confluence
+                          </p>
+                        </div>
+                      </div>
+                      <div class="list-item2 collapsible-additional-software">
+                        <img class="vertical-dash"></img>
+                        <div class="list-item-nested">
+                          <img class="inline-dash"></img>
+                          <img src="./assets/icons/computer.svg" class="list-bullet"></img>
+                          <p>
+                            &nbsp;Jira
+                          </p>
+                        </div>
+                      </div>
+                      <div class="list-item2 collapsible-additional-software">
+                        <img class="vertical-dash"></img>
+                        <div class="list-item-nested">
+                          <img class="inline-dash"></img>
+                          <img src="./assets/icons/computer.svg" class="list-bullet"></img>
+                          <p>
+                            &nbsp;Stash
+                          </p>
+                        </div>
+                      </div>
+                      <div class="list-item2 collapsible-additional-software">
+                        <img class="vertical-dash"></img>
+                        <div class="list-item-nested">
+                          <img class="inline-dash"></img>
+                          <img src="./assets/icons/computer.svg" class="list-bullet"></img>
+                          <p>
+                            &nbsp;Git
+                          </p>
                         </div>
                       </div>
                     </div>
-                  </label>
-                </div>
-              </td>
-            </tr>
-            <tr>
-              <td>
-                <div class="window-text">
-                  <div class="list">
-                    <input type="checkbox" id="python"/>
-                    <input type="checkbox" id="infrastructure"/>
-                    <input type="checkbox" id="additional-software"/>
-                    <div class="list-item">
-                      <label for="python">
-                        <img class="list-bullet-collapsible-python"></img>
-                      </label>
-                      <img class="inline-dash"></img>
-                      <img src="./assets/icons/python.svg" class="list-bullet"></img>
-                      <p>
-                        &nbsp;Python
-                      </p>
-                    </div>
-                    <div class="list-item2 collapsible-python">
-                      <img class="vertical-dash"></img>
-                      <div class="list-item-nested">
-                        <img class="inline-dash"></img>
-                        <img src="./assets/icons/python.svg" class="list-bullet"></img>
-                        <p>
-                          &nbsp;SQLAlchemy
-                        </p>
-                      </div>
-                    </div>
-                    <div class="list-item2 collapsible-python">
-                      <img class="vertical-dash"></img>
-                      <div class="list-item-nested">
-                        <img class="inline-dash"></img>
-                        <img src="./assets/icons/python.svg" class="list-bullet"></img>
-                        <p>
-                          &nbsp;Falcon
-                        </p>
-                      </div>
-                    </div>
-                    <div class="list-item2 collapsible-python">
-                      <img class="vertical-dash"></img>
-                      <div class="list-item-nested">
-                        <img class="inline-dash"></img>
-                        <img src="./assets/icons/python.svg" class="list-bullet"></img>
-                        <p>
-                          &nbsp;Celery
-                        </p>
-                      </div>
-                    </div>
-                    <div class="list-item2 collapsible-python">
-                      <img class="vertical-dash"></img>
-                      <div class="list-item-nested">
-                        <img class="inline-dash"></img>
-                        <img src="./assets/icons/python.svg" class="list-bullet"></img>
-                        <p>
-                          &nbsp;tox
-                        </p>
-                      </div>
-                    </div>
-                    <div class="list-item2 collapsible-python">
-                      <img class="vertical-dash"></img>
-                      <div class="list-item-nested">
-                        <img class="inline-dash"></img>
-                        <img src="./assets/icons/python.svg" class="list-bullet"></img>
-                        <p>
-                          &nbsp;Django
-                        </p>
-                      </div>
-                    </div>
-                    <div class="list-item">
-                      <img class="vertical-dash"></img>
-                      <img class="vertical-dash-2 collapsible-python"></img>
-                      <img class="vertical-dash-3 collapsible-python"></img>
-                      <img class="vertical-dash-4 collapsible-python"></img>
-                      <img class="vertical-dash-5 collapsible-python"></img>
-                      <img class="vertical-dash-6 collapsible-python"></img>
-                      <div class="list-item-root">
-                        <label for="infrastructure">
-                          <img class="list-bullet-collapsible-infrastructure"></img>
-                        </label>
-                        <img class="inline-dash"></img>
-                        <img src="./assets/icons/infrastructure.svg" class="list-bullet"></img>
-                        <p>
-                          &nbsp;Infrastructure
-                        </p>
-                      </div>
-                    </div>
-                    <div class="list-item2 collapsible-infrastructure">
-                      <img class="vertical-dash"></img>
-                      <div class="list-item-nested">
-                        <img class="inline-dash"></img>
-                        <img src="./assets/icons/infrastructure.svg" class="list-bullet"></img>
-                        <p>
-                          &nbsp;PostgreSQL
-                        </p>
-                      </div>
-                    </div>
-                    <div class="list-item2 collapsible-infrastructure">
-                      <img class="vertical-dash"></img>
-                      <div class="list-item-nested">
-                        <img class="inline-dash"></img>
-                        <img src="./assets/icons/infrastructure.svg" class="list-bullet"></img>
-                        <p>
-                          &nbsp;Redis
-                        </p>
-                      </div>
-                    </div>
-                    <div class="list-item2 collapsible-infrastructure">
-                      <img class="vertical-dash"></img>
-                      <div class="list-item-nested">
-                        <img class="inline-dash"></img>
-                        <img src="./assets/icons/infrastructure.svg" class="list-bullet"></img>
-                        <p>
-                          &nbsp;Kafka
-                        </p>
-                      </div>
-                    </div>
-                    <div class="list-item2 collapsible-infrastructure">
-                      <img class="vertical-dash"></img>
-                      <div class="list-item-nested">
-                        <img class="inline-dash"></img>
-                        <img src="./assets/icons/infrastructure.svg" class="list-bullet"></img>
-                        <p>
-                          &nbsp;RabbitMQ
-                        </p>
-                      </div>
-                    </div>
-                    <div class="list-item2 collapsible-infrastructure">
-                      <img class="vertical-dash"></img>
-                      <div class="list-item-nested">
-                        <img class="inline-dash"></img>
-                        <img src="./assets/icons/infrastructure.svg" class="list-bullet"></img>
-                        <p>
-                          &nbsp;Nginx
-                        </p>
-                      </div>
-                    </div>
-                    <div class="list-item">
-                      <img class="vertical-dash"></img>
-                      <img class="vertical-dash-2 collapsible-infrastructure"></img>
-                      <img class="vertical-dash-3 collapsible-infrastructure"></img>
-                      <img class="vertical-dash-4 collapsible-infrastructure"></img>
-                      <img class="vertical-dash-5 collapsible-infrastructure"></img>
-                      <img class="vertical-dash-6 collapsible-infrastructure"></img>
-                      <div class="list-item-root">
-                        <label for="additional-software">
-                          <img class="list-bullet-collapsible-additional-software"></img>
-                        </label>
-                        <img class="inline-dash"></img>
-                        <img src="./assets/icons/computer.svg" class="list-bullet"></img>
-                        <p>
-                          &nbsp;Additional Software
-                        </p>
-                      </div>
-                    </div>
-                    <div class="list-item2 collapsible-additional-software">
-                      <img class="vertical-dash"></img>
-                      <div class="list-item-nested">
-                        <img class="inline-dash"></img>
-                        <img src="./assets/icons/computer.svg" class="list-bullet"></img>
-                        <p>
-                          &nbsp;Jenkins
-                        </p>
-                      </div>
-                    </div>
-                    <div class="list-item2 collapsible-additional-software">
-                      <img class="vertical-dash"></img>
-                      <div class="list-item-nested">
-                        <img class="inline-dash"></img>
-                        <img src="./assets/icons/computer.svg" class="list-bullet"></img>
-                        <p>
-                          &nbsp;TeamCity
-                        </p>
-                      </div>
-                    </div>
-                    <div class="list-item2 collapsible-additional-software">
-                      <img class="vertical-dash"></img>
-                      <div class="list-item-nested">
-                        <img class="inline-dash"></img>
-                        <img src="./assets/icons/computer.svg" class="list-bullet"></img>
-                        <p>
-                          &nbsp;Confluence
-                        </p>
-                      </div>
-                    </div>
-                    <div class="list-item2 collapsible-additional-software">
-                      <img class="vertical-dash"></img>
-                      <div class="list-item-nested">
-                        <img class="inline-dash"></img>
-                        <img src="./assets/icons/computer.svg" class="list-bullet"></img>
-                        <p>
-                          &nbsp;Jira
-                        </p>
-                      </div>
-                    </div>
-                    <div class="list-item2 collapsible-additional-software">
-                      <img class="vertical-dash"></img>
-                      <div class="list-item-nested">
-                        <img class="inline-dash"></img>
-                        <img src="./assets/icons/computer.svg" class="list-bullet"></img>
-                        <p>
-                          &nbsp;Stash
-                        </p>
-                      </div>
-                    </div>
-                    <div class="list-item2 collapsible-additional-software">
-                      <img class="vertical-dash"></img>
-                      <div class="list-item-nested">
-                        <img class="inline-dash"></img>
-                        <img src="./assets/icons/computer.svg" class="list-bullet"></img>
-                        <p>
-                          &nbsp;Git
-                        </p>
-                      </div>
-                    </div>
                   </div>
-                </div>
-              </td>
-            </tr>
-          </table>
-          <!-- Languages -->
-          <table class="window-minh closable-languages">
-            <tr>
-              <td>
-                <div class="header-window">
+                </td>
+              </tr>
+            </table>
+            <!-- Languages -->
+            <table class="window-minh closable-languages">
+              <tr>
+                <td>
                   <div class="header-window">
-                    <img src="./assets/icons/list.svg" class="icon-window"></img>
-                    <div class="win-name">Languages</div>
-                  </div>
-                  <label for="languages">
-                    <div class="outer-cross">
-                      <div class="inner-cross">
-                        <div class="cross-base">
-                          <img class="cross"></img>
+                    <div class="header-window">
+                      <img src="./assets/icons/list.svg" class="icon-window"></img>
+                      <div class="win-name">Languages</div>
+                    </div>
+                    <label for="languages">
+                      <div class="outer-cross">
+                        <div class="inner-cross">
+                          <div class="cross-base">
+                            <img class="cross"></img>
+                          </div>
                         </div>
                       </div>
-                    </div>
-                  </label>
-                </div>
-              </td>
-            </tr>
-            <tr>
-              <td>
-                <div class="window-text">
-                  <div class="list">
-                    <input type="checkbox" id="english"/>
-                    <input type="checkbox" id="belarusian"/>
-                    <input type="checkbox" id="russian"/>
-                    <div class="list-item">
-                      <label for="english">
-                        <img class="list-bullet-collapsible-english"></img>
-                      </label>
-                      <img class="inline-dash"></img>
-                      <img src="./assets/icons/globe.svg" class="list-bullet"></img>
-                      <p>
-                        &nbsp;English
-                      </p>
-                    </div>
-                    <div class="list-item2 collapsible-english">
-                      <img class="vertical-dash"></img>
-                      <div class="list-item-nested">
-                        <img class="inline-dash"></img>
-                        <img src="./assets/icons/message.svg" class="list-bullet"></img>
-                        <p>
-                          &nbsp;C1
-                        </p>
-                      </div>
-                    </div>
-                    <div class="list-item">
-                      <img class="vertical-dash"></img>
-                      <img class="vertical-dash-2 collapsible-english"></img>
-                      <div class="list-item-root">
-                        <label for="belarusian">
-                          <img class="list-bullet-collapsible-belarusian"></img>
+                    </label>
+                  </div>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <div class="window-text">
+                    <div class="list">
+                      <input type="checkbox" id="english"/>
+                      <input type="checkbox" id="belarusian"/>
+                      <input type="checkbox" id="russian"/>
+                      <div class="list-item">
+                        <label for="english">
+                          <img class="list-bullet-collapsible-english"></img>
                         </label>
                         <img class="inline-dash"></img>
                         <img src="./assets/icons/globe.svg" class="list-bullet"></img>
                         <p>
-                          &nbsp;Belarusian
+                          &nbsp;English
                         </p>
                       </div>
-                    </div>
-                    <div class="list-item2 collapsible-belarusian">
-                      <img class="vertical-dash"></img>
-                      <div class="list-item-nested">
-                        <img class="inline-dash"></img>
-                        <img src="./assets/icons/message.svg" class="list-bullet"></img>
-                        <p>
-                          &nbsp;Native
-                        </p>
+                      <div class="list-item2 collapsible-english">
+                        <img class="vertical-dash"></img>
+                        <div class="list-item-nested">
+                          <img class="inline-dash"></img>
+                          <img src="./assets/icons/message.svg" class="list-bullet"></img>
+                          <p>
+                            &nbsp;C1
+                          </p>
+                        </div>
                       </div>
-                    </div>
-                    <div class="list-item">
-                      <img class="vertical-dash"></img>
-                      <img class="vertical-dash-2 collapsible-belarusian"></img>
-                      <div class="list-item-root">
-                        <label for="russian">
-                          <img class="list-bullet-collapsible-russian"></img>
-                        </label>
-                        <img class="inline-dash"></img>
-                        <img src="./assets/icons/globe.svg" class="list-bullet"></img>
-                        <p>
-                          &nbsp;Russian
-                        </p>
+                      <div class="list-item">
+                        <img class="vertical-dash"></img>
+                        <img class="vertical-dash-2 collapsible-english"></img>
+                        <div class="list-item-root">
+                          <label for="belarusian">
+                            <img class="list-bullet-collapsible-belarusian"></img>
+                          </label>
+                          <img class="inline-dash"></img>
+                          <img src="./assets/icons/globe.svg" class="list-bullet"></img>
+                          <p>
+                            &nbsp;Belarusian
+                          </p>
+                        </div>
                       </div>
-                    </div>
-                    <div class="list-item2 collapsible-russian">
-                      <img class="vertical-dash"></img>
-                      <div class="list-item-nested">
-                        <img class="inline-dash"></img>
-                        <img src="./assets/icons/message.svg" class="list-bullet"></img>
-                        <p>
-                          &nbsp;Native
-                        </p>
+                      <div class="list-item2 collapsible-belarusian">
+                        <img class="vertical-dash"></img>
+                        <div class="list-item-nested">
+                          <img class="inline-dash"></img>
+                          <img src="./assets/icons/message.svg" class="list-bullet"></img>
+                          <p>
+                            &nbsp;Native
+                          </p>
+                        </div>
+                      </div>
+                      <div class="list-item">
+                        <img class="vertical-dash"></img>
+                        <img class="vertical-dash-2 collapsible-belarusian"></img>
+                        <div class="list-item-root">
+                          <label for="russian">
+                            <img class="list-bullet-collapsible-russian"></img>
+                          </label>
+                          <img class="inline-dash"></img>
+                          <img src="./assets/icons/globe.svg" class="list-bullet"></img>
+                          <p>
+                            &nbsp;Russian
+                          </p>
+                        </div>
+                      </div>
+                      <div class="list-item2 collapsible-russian">
+                        <img class="vertical-dash"></img>
+                        <div class="list-item-nested">
+                          <img class="inline-dash"></img>
+                          <img src="./assets/icons/message.svg" class="list-bullet"></img>
+                          <p>
+                            &nbsp;Native
+                          </p>
+                        </div>
                       </div>
                     </div>
                   </div>
-                </div>
-              </td>
-            </tr>
-          </table>
+                </td>
+              </tr>
+            </table>
+          </div>
         </div>
         <!-- Main Part -->
         <div class="big-part-container">
@@ -765,8 +798,11 @@
                       </label>
                       <img class="inline-dash"></img>
                       <img src="./assets/icons/bsuir.svg" class="list-bullet"></img>
-                      <p>
+                      <p class="bsuir-text-desktop">
                         &nbsp;Belarusian State University of Informatics and Radioelectronics
+                      </p>
+                      <p class="bsuir-text-mobile">
+                        &nbsp;BSUIR
                       </p>
                     </div>
                     <div class="list-item2 collapsible-bsuir">
@@ -838,7 +874,10 @@
           <label for="photo">
             <div class="doc-app">
               <img src="./assets/icons/image.svg" class="app-icon"></img>
-              <div class="doc-name">Photo.jpg</div>
+              <div class="doc-name">Photo.png</div>
+              <div class="doc-name">Photo</div>
+              <div class="doc-name">Phot...</div>
+              <div class="doc-name">Ph...</div>
             </div>
           </label>
           <label for="contacts">
@@ -851,30 +890,45 @@
             <div class="doc-app">
               <img src="./assets/icons/list.svg" class="app-icon"></img>
               <div class="doc-name">Skills</div>
+              <div class="doc-name">Skills</div>
+              <div class="doc-name">Skills</div>
+              <div class="doc-name">Skil...</div>
             </div>
           </label>
           <label for="languages">
             <div class="doc-app">
               <img src="./assets/icons/list.svg" class="app-icon"></img>
               <div class="doc-name">Languages</div>
+              <div class="doc-name">Langu...</div>
+              <div class="doc-name">Lang...</div>
+              <div class="doc-name">La...</div>
             </div>
           </label>
           <label for="introduction">
             <div class="doc-app">
               <img src="./assets/icons/text.svg" class="app-icon"></img>
               <div class="doc-name">Introduction</div>
+              <div class="doc-name">Introdu...</div>
+              <div class="doc-name">Intro...</div>
+              <div class="doc-name">Intr...</div>
             </div>
           </label>
           <label for="experience">
             <div class="doc-app">
               <img src="./assets/icons/list.svg" class="app-icon"></img>
               <div class="doc-name">Experience</div>
+              <div class="doc-name">Expiren...</div>
+              <div class="doc-name">Expir...</div>
+              <div class="doc-name">Exp...</div>
             </div>
           </label>
           <label for="education">
             <div class="doc-app">
               <img src="./assets/icons/list.svg" class="app-icon"></img>
               <div class="doc-name">Education</div>
+              <div class="doc-name">Educat...</div>
+              <div class="doc-name">Educ...</div>
+              <div class="doc-name">Ed...</div>
             </div>
           </label>
         </div>

@@ -147,7 +147,7 @@ input {
     border-image-source: var(--closed-border);
 }
 
-#skills:checked ~ div[class~=desktop] > div[class~=main-container] > div[class~=side-data] > table[class~=closable-skills] {
+#skills:checked ~ div[class~=desktop] > div[class~=main-container] > div[class~=side-data] > div[class~=mobile-row] > table[class~=closable-skills] {
     visibility: hidden;
 }
 
@@ -155,7 +155,7 @@ input {
     border-image-source: var(--closed-border);
 }
 
-#languages:checked ~ div[class~=desktop] > div[class~=main-container] > div[class~=side-data] > table[class~=closable-languages] {
+#languages:checked ~ div[class~=desktop] > div[class~=main-container] > div[class~=side-data] > div[class~=mobile-row] > table[class~=closable-languages] {
     visibility: hidden;
 }
 
