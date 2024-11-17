@@ -59,9 +59,9 @@ h1 {
 }
 
 
-@media (max-width: 405px) {
+@media (max-width: 410px) {
     .header-container {
-        --photo-height: max(calc(239px - (405px - 100vw) * 1.5), 170px);
+        --photo-height: max(calc(239px - (410px - 100vw) * 1.5), 170px);
     }
 }
 
