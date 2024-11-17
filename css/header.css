@@ -5,6 +5,19 @@
     --photo-height: 239px;
 }
 
+@supports (-webkit-touch-callout: none) {
+    @media screen and (orientation:landscape) {
+        .header-container {
+            width: calc(100% - 2 * var(--border-width));
+        }
+    }
+    @media screen and (orientation:portrait) {
+        .header-container {
+            width: calc(100% - 2 * var(--desktop-padding));
+        }
+    }
+}
+
 .profile-photo {
     height: var(--photo-height);
     width: calc(var(--photo-height) * 180 / 239);
@@ -34,7 +47,6 @@
     padding-bottom: var(--initial-target-padding);
     padding-left: 0;
     padding-right: 0;
-    --default-long-dash-margin-top: calc(var(--long-dash-length) * (-1.5 / 9));
 }
 
 div[class^="contacts-mobile"] {
@@ -59,9 +71,9 @@ h1 {
 }
 
 
-@media (max-width: 410px) {
+@media (max-width: 430px) {
     .header-container {
-        --photo-height: max(calc(239px - (410px - 100vw) * 1.5), 170px);
+        --photo-height: max(calc(239px - (430px - 100vw) * 1.5), 170px);
     }
 }
 

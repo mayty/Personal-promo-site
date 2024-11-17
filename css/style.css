@@ -35,7 +35,8 @@ body {
 }
 
 .desktop {
-    padding: max(var(--target-padding), 2px);
+    --desktop-padding: max(var(--target-padding), 2px);
+    padding: var(--desktop-padding);
     max-width: var(--max-width);
     min-width: max-content;
     margin: auto;
