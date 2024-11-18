@@ -123,7 +123,7 @@ input {
     content: url("../assets/icons/plus.svg");
 }
 
-#photo:checked ~ div[class~=desktop] > div[class~=header-container] > table[class~=closable-photo] {
+#photo:checked ~ div[class~=header-container] > table[class~=closable-photo] {
     visibility: hidden;
 }
 
@@ -131,47 +131,47 @@ input {
     border-image-source: var(--closed-border);
 }
 
-#introduction:checked ~ div[class~=desktop] > div[class~=header-container] > table[class~=closable-introduction] {
+#introduction:checked ~ div[class~=header-container] > table[class~=closable-introduction] {
     visibility: hidden;
 }
 
-#introduction:checked ~div[class~=footer] > div[class~=doc-bar] > div[class~=doc-app-container] > label[for=introduction] > div[class=doc-app] {
+#introduction:checked ~ div[class~=footer] > div[class~=doc-bar] > div[class~=doc-app-container] > label[for=introduction] > div[class=doc-app] {
     border-image-source: var(--closed-border);
 }
 
-#contacts:checked ~ div[class~=desktop] > div[class~=main-container] > div[class~=side-data] > table[class~=closable-contacts] {
+#contacts:checked ~ div[class~=main-container] > div[class~=side-data] > table[class~=closable-contacts] {
     visibility: hidden;
 }
 
-#contacts:checked ~div[class~=footer] > div[class~=doc-bar] > div[class~=doc-app-container] > label[for=contacts] > div[class=doc-app] {
+#contacts:checked ~ div[class~=footer] > div[class~=doc-bar] > div[class~=doc-app-container] > label[for=contacts] > div[class=doc-app] {
     border-image-source: var(--closed-border);
 }
 
-#skills:checked ~ div[class~=desktop] > div[class~=main-container] > div[class~=side-data] > div[class~=mobile-row] > table[class~=closable-skills] {
+#skills:checked ~ div[class~=main-container] > div[class~=side-data] > div[class~=mobile-row] > table[class~=closable-skills] {
     visibility: hidden;
 }
 
-#skills:checked ~div[class~=footer] > div[class~=doc-bar] > div[class~=doc-app-container] > label[for=skills] > div[class=doc-app] {
+#skills:checked ~ div[class~=footer] > div[class~=doc-bar] > div[class~=doc-app-container] > label[for=skills] > div[class=doc-app] {
     border-image-source: var(--closed-border);
 }
 
-#languages:checked ~ div[class~=desktop] > div[class~=main-container] > div[class~=side-data] > div[class~=mobile-row] > table[class~=closable-languages] {
+#languages:checked ~ div[class~=main-container] > div[class~=side-data] > div[class~=mobile-row] > table[class~=closable-languages] {
     visibility: hidden;
 }
 
-#languages:checked ~div[class~=footer] > div[class~=doc-bar] > div[class~=doc-app-container] > label[for=languages] > div[class=doc-app] {
+#languages:checked ~ div[class~=footer] > div[class~=doc-bar] > div[class~=doc-app-container] > label[for=languages] > div[class=doc-app] {
     border-image-source: var(--closed-border);
 }
 
-#experience:checked ~ div[class~=desktop] > div[class~=main-container] > div[class~=big-part-container] > table[class~=closable-experience] {
+#experience:checked ~ div[class~=main-container] > div[class~=big-part-container] > table[class~=closable-experience] {
     visibility: hidden;
 }
 
-#experience:checked ~div[class~=footer] > div[class~=doc-bar] > div[class~=doc-app-container] > label[for=experience] > div[class=doc-app] {
+#experience:checked ~ div[class~=footer] > div[class~=doc-bar] > div[class~=doc-app-container] > label[for=experience] > div[class=doc-app] {
     border-image-source: var(--closed-border);
 }
 
-#education:checked ~ div[class~=desktop] > div[class~=main-container] > div[class~=big-part-container] > table[class~=closable-education] {
+#education:checked ~ div[class~=main-container] > div[class~=big-part-container] > table[class~=closable-education] {
     visibility: hidden;
 }
 
@@ -179,57 +179,24 @@ input {
     border-image-source: var(--closed-border);
 }
 
-.wrapper {
+.screen-dimmer {
     position: fixed;
     width: 100%;
     height: 100%;
+    left: 0;
+    top: 0;
     background-color: rgba(0, 0, 0, 0);
     z-index: -1;
     margin:0;
     padding: 0;
-}
-
-#all:checked + #all1:checked ~ .wrapper {
-    animation-name: reload;
-    animation-duration: 2s;
-    animation-timing-function: linear;
-    z-index: -1;
-}
-
-#all:checked + #all1:not(:checked) ~ .wrapper {
-    animation-name: reload1;
-    animation-duration: 2s;
-    animation-timing-function: linear;
-    z-index: -1;
-}
-
-#all:not(:checked) + #all1:not(:checked) ~ .wrapper {
     animation-name: load;
     animation-duration: 2s;
     animation-timing-function: linear;
     z-index: -1;
 }
 
-#all:checked ~ div[class~=footer] > div[class~=doc-bar] > div[class~=doc-app-container] > label[for=all] {
-    display: none;
-}
-
-#all:not(:checked) ~ div[class~=footer] > div[class~=doc-bar] > div[class~=doc-app-container] > label[for=all1] {
-    display: none;
-}
-
-@keyframes reload {
-    0% {background-color: rgba(0, 0, 0, 0); z-index: 5;}
-    40% {background-color: rgba(0, 0, 0, 1); z-index: 5;}
-    60% {background-color: rgba(0, 0, 0, 1); z-index: 5;}
-    100% {background-color: rgba(0, 0, 0, 0); z-index: 5;}
-}
-
-@keyframes reload1 {
-    0% {background-color: rgba(0, 0, 0, 0); z-index: 5;}
-    40% {background-color: rgba(0, 0, 0, 1); z-index: 5;}
-    60% {background-color: rgba(0, 0, 0, 1); z-index: 5;}
-    100% {background-color: rgba(0, 0, 0, 0); z-index: 5;}
+#reloader:active ~ .screen-dimmer {
+    animation-name: none;
 }
 
 @keyframes load {

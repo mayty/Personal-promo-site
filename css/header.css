@@ -53,7 +53,7 @@ div[class^="contacts-mobile"] {
     display: flex;
     width: max-content;
     height: var(--inline-picture-size);
-    align-items: center;    
+    align-items: center;
 }
 
 div[class^="contacts-mobile"] > *:not(img) {

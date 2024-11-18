@@ -1,6 +1,7 @@
 .footer {
     position: fixed;
     bottom: 0;
+    left: 0;
     width: max(100%, var(--min-footer-width));
     z-index: 2;
 }
@@ -48,7 +49,7 @@
     cursor: pointer;
 }
 
-div[class=doc-app-container] > label:not([for^=all]) {
+div[class=doc-app-container] > label:not([for=reloader]) {
     width: var(--app-width);
     display: inline-flex;
 }

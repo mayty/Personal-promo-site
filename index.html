@@ -6,12 +6,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no" />
     <meta name="description" content="Backend Web Developer at Wargaming.">
     <title>Pavel Pikirenia</title>
+    <link rel="stylesheet" href="/css/toggles.css">
     <link rel="stylesheet" href="/css/style.css">
     <link rel="stylesheet" href="/css/windows.css">
     <link rel="stylesheet" href="/css/header.css">
     <link rel="stylesheet" href="/css/footer.css">
     <link rel="stylesheet" href="/css/main.css">
-    <link rel="stylesheet" href="/css/toggles.css">
 
     <!-- Microsoft stuff -->
     <meta name="msapplication-TileColor" content="#FFFFFF">
@@ -50,17 +50,16 @@
   </head>
 
   <body>
-    <input type="checkbox" id="all"/>
-    <input type="checkbox" id="all1"/>
-    <input type="checkbox" id="photo"/>
-    <input type="checkbox" id="introduction"/>
-    <input type="checkbox" id="contacts"/>
-    <input type="checkbox" id="skills"/>
-    <input type="checkbox" id="languages"/>
-    <input type="checkbox" id="experience"/>
-    <input type="checkbox" id="education"/>
-    <div class="wrapper"></div>
-    <div class="desktop">
+    <form class="desktop">
+      <input type="checkbox" id="photo"/>
+      <input type="reset" id="reloader"/>
+      <input type="checkbox" id="introduction"/>
+      <input type="checkbox" id="contacts"/>
+      <input type="checkbox" id="skills"/>
+      <input type="checkbox" id="languages"/>
+      <input type="checkbox" id="experience"/>
+      <input type="checkbox" id="education"/>
+      <div class="screen-dimmer"></div>
       <div class="header-container">
         <!-- Photo -->
         <table class="window-min closable-photo">
@@ -861,12 +860,7 @@
     <div class="hidden-print footer">
       <div class="doc-bar">
         <div class="doc-app-container">
-          <label for="all">
-            <div class="start-app">
-              <img src="./assets/icons/power.svg" class="app-icon"></img>
-            </div>
-          </label>
-          <label for="all1">
+          <label for="reloader">
             <div class="start-app">
               <img src="./assets/icons/power.svg" class="app-icon"></img>
             </div>
